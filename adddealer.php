@@ -32,7 +32,7 @@ li{
          <div class="col-lg-12">
             <div class="formbox">
                <form action="./submitdealer.php" method="POST">
-               	<h3 style="text-align: center;">Please Enter Dealer Details.</h3>
+               	<h3 style="text-align: center;">Please Enter Dealers Details.</h3>
                   <div class="form-group">
                      <input type="text" class="form-control company"  name="company" id="company" placeholder="Company Name">
                   </div>
