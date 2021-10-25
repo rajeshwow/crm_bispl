@@ -1,0 +1,2260 @@
+Array
+(
+    [DSPACCNAME] => Array
+        (
+            [0] => Array
+                (
+                    [DSPDISPNAME] => AIRPRO
+                )
+
+            [1] => Array
+                (
+                    [DSPDISPNAME] => 1.25G BIDI SFP SM DUAL FIBER MODULE
+                )
+
+            [2] => Array
+                (
+                    [DSPDISPNAME] => 48 Volt POE Injector 10/100
+                )
+
+            [3] => Array
+                (
+                    [DSPDISPNAME] => 86 TYPE FACEPLATE 1 PORT
+                )
+
+            [4] => Array
+                (
+                    [DSPDISPNAME] => AIR BGN-1122 (300 MBPS ROUTER)
+                )
+
+            [5] => Array
+                (
+                    [DSPDISPNAME] => AIRDRONA 2321 2.4 12DBI CPE
+                )
+
+            [6] => Array
+                (
+                    [DSPDISPNAME] => AIR M1200 MBPS CEILLING MOUNT
+                )
+
+            [7] => Array
+                (
+                    [DSPDISPNAME] => AIR M-750 DUAL BAND ACCESS POINT
+                )
+
+            [8] => Array
+                (
+                    [DSPDISPNAME] => AIR MO-750 MBPS OUTDOOR AP
+                )
+
+            [9] => Array
+                (
+                    [DSPDISPNAME] => Air Setu 2.4 G
+                )
+
+            [10] => Array
+                (
+                    [DSPDISPNAME] => AP-1208-2GE
+                )
+
+            [11] => Array
+                (
+                    [DSPDISPNAME] => AP 1208 8+2 UPLINK SWITCH
+                )
+
+            [12] => Array
+                (
+                    [DSPDISPNAME] => AP1216 16PORT POE SWITCH
+                )
+
+            [13] => Array
+                (
+                    [DSPDISPNAME] => AP1224 24 PORT POE UNMANAGED SWITCH
+                )
+
+            [14] => Array
+                (
+                    [DSPDISPNAME] => AP-1501G ONU
+                )
+
+            [15] => Array
+                (
+                    [DSPDISPNAME] => AP-ES106P (AP 1205) Switch
+                )
+
+            [16] => Array
+                (
+                    [DSPDISPNAME] => AP-ES-108-2GE
+                )
+
+            [17] => Array
+                (
+                    [DSPDISPNAME] => AP -ES 1424
+                )
+
+            [18] => Array
+                (
+                    [DSPDISPNAME] => AP-ESG1024P (AP1224)
+                )
+
+            [19] => Array
+                (
+                    [DSPDISPNAME] => AP-ESG105P
+                )
+
+            [20] => Array
+                (
+                    [DSPDISPNAME] => AP-ESG108P (AP1208)Camera POE Switch
+                )
+
+            [21] => Array
+                (
+                    [DSPDISPNAME] => AP ESG 1910P-2GE
+                )
+
+            [22] => Array
+                (
+                    [DSPDISPNAME] => AP-ESG 3024P 24 Port POE +4 SFP Uplink
+                )
+
+            [23] => Array
+                (
+                    [DSPDISPNAME] => AP-GS1008 PORT SWITCH
+                )
+
+            [24] => Array
+                (
+                    [DSPDISPNAME] => AP-GS-1016
+                )
+
+            [25] => Array
+                (
+                    [DSPDISPNAME] => AP-GS-1024
+                )
+
+            [26] => Array
+                (
+                    [DSPDISPNAME] => AP-GS-1905
+                )
+
+            [27] => Array
+                (
+                    [DSPDISPNAME] => AP-GS-1910P 8Port  Fiber Switch
+                )
+
+            [28] => Array
+                (
+                    [DSPDISPNAME] => AP -POE 1000G ADAPTOR
+                )
+
+            [29] => Array
+                (
+                    [DSPDISPNAME] => AP-WAC-2100 1200mbps Ceiling AP
+                )
+
+            [30] => Array
+                (
+                    [DSPDISPNAME] => ES1116 16 PORT ETHERNET SWITCH
+                )
+
+            [31] => Array
+                (
+                    [DSPDISPNAME] => ES1404 4+1 PORT 24V POE SWITCH
+                )
+
+            [32] => Array
+                (
+                    [DSPDISPNAME] => Media Convertor SMDF 20 KM 100FX
+                )
+
+            [33] => Array
+                (
+                    [DSPDISPNAME] => Media Convertor SMDF Giga 20KM
+                )
+
+            [34] => Array
+                (
+                    [DSPDISPNAME] => MEDIA CONVERTOR SMSF 20KM-1310 100FX
+                )
+
+            [35] => Array
+                (
+                    [DSPDISPNAME] => MEDIA CONVERTOR SMSF 20KM -1550 100FX
+                )
+
+            [36] => Array
+                (
+                    [DSPDISPNAME] => OLT SFP-PX20
+                )
+
+            [37] => Array
+                (
+                    [DSPDISPNAME] => PIGTAIL CABLE
+                )
+
+            [38] => Array
+                (
+                    [DSPDISPNAME] => XDS 300 MBPS Ceilling Mount
+                )
+
+            [39] => Array
+                (
+                    [DSPDISPNAME] => AIRPRO PASSIVE
+                )
+
+            [40] => Array
+                (
+                    [DSPDISPNAME] => AP 12 PORT LOADED PATCH PANEL
+                )
+
+            [41] => Array
+                (
+                    [DSPDISPNAME] => AP 24 PORT LOADED PATCH PANEL
+                )
+
+            [42] => Array
+                (
+                    [DSPDISPNAME] => AP 2 PORT SYNWALL PLATE
+                )
+
+            [43] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 10'' PATCH CORD
+                )
+
+            [44] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 1MTR  PATCH CORD GREEN
+                )
+
+            [45] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 1MTR  PATCH CORD GREY
+                )
+
+            [46] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 1MTR  PATCH CORD RED
+                )
+
+            [47] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 2 MTR  PATCH CORD BLUE
+                )
+
+            [48] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 2 MTR  PATCH CORD GRAY
+                )
+
+            [49] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 2 MTR  PATCH CORD GREEN
+                )
+
+            [50] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 2 MTR  PATCH CORD RED
+                )
+
+            [51] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 3MTR  PATCH CORD BLUE
+                )
+
+            [52] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 3MTR  PATCH CORD GRAY
+                )
+
+            [53] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 3MTR  PATCH CORD GREEN
+                )
+
+            [54] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 3MTR  PATCH CORD RED
+                )
+
+            [55] => Array
+                (
+                    [DSPDISPNAME] => AP CAT 6 5 MTR  PATCH CORD
+                )
+
+            [56] => Array
+                (
+                    [DSPDISPNAME] => AP DATAGATE I/O JACK SHUTTERED
+                )
+
+            [57] => Array
+                (
+                    [DSPDISPNAME] => AP DATAGATE I/O JACK UNSHUTTERED
+                )
+
+            [58] => Array
+                (
+                    [DSPDISPNAME] => BenQ
+                )
+
+            [59] => Array
+                (
+                    [DSPDISPNAME] => PROJECTOR STAND & SCREEN
+                )
+
+            [60] => Array
+                (
+                    [DSPDISPNAME] => BenQ Projector MX808PST
+                )
+
+            [61] => Array
+                (
+                    [DSPDISPNAME] => Data Projector MS506P SVGA Solely Usable (BenQ)
+                )
+
+            [62] => Array
+                (
+                    [DSPDISPNAME] => EKIN
+                )
+
+            [63] => Array
+                (
+                    [DSPDISPNAME] => Ekin 200
+                )
+
+            [64] => Array
+                (
+                    [DSPDISPNAME] => EKIN-IWB7900/EKIN INTERACTIVE WHITE BOARD
+                )
+
+            [65] => Array
+                (
+                    [DSPDISPNAME] => OPTICAL TOUCH BOARD 82 DIAGONAL EKIN IWB 8000
+                )
+
+            [66] => Array
+                (
+                    [DSPDISPNAME] => S100/VCLOUD THIN CLIENT
+                )
+
+            [67] => Array
+                (
+                    [DSPDISPNAME] => USB Extender 10 MTR  Male to Female Cable
+                )
+
+            [68] => Array
+                (
+                    [DSPDISPNAME] => FORTINET
+                )
+
+            [69] => Array
+                (
+                    [DSPDISPNAME] => FG60E Three  Year 24X7 LICENSE
+                )
+
+            [70] => Array
+                (
+                    [DSPDISPNAME] => FG60E Three  Year 8x5 Bundle Subscription Appliance
+                )
+
+            [71] => Array
+                (
+                    [DSPDISPNAME] => Hardware
+                )
+
+            [72] => Array
+                (
+                    [DSPDISPNAME] => TV CART AVT-T120 PR
+                )
+
+            [73] => Array
+                (
+                    [DSPDISPNAME] => MOLEX
+                )
+
+            [74] => Array
+                (
+                    [DSPDISPNAME] => MOLEX CAT-6 305MTR CABLE  CAA-00076 Blue
+                )
+
+            [75] => Array
+                (
+                    [DSPDISPNAME] => Plastic Surface Box 1-2 MO (Gangbox)
+                )
+
+            [76] => Array
+                (
+                    [DSPDISPNAME] => NETRACK
+                )
+
+            [77] => Array
+                (
+                    [DSPDISPNAME] => 12/U 400RACK (COMPUTER RACK)
+                )
+
+            [78] => Array
+                (
+                    [DSPDISPNAME] => 12U/500 RACK (COMPUTER RACK )
+                )
+
+            [79] => Array
+                (
+                    [DSPDISPNAME] => 12U/600 RACK (COMPUTER RACK )
+                )
+
+            [80] => Array
+                (
+                    [DSPDISPNAME] => 15U/400 RACK (FOR COMPUTER RACK)
+                )
+
+            [81] => Array
+                (
+                    [DSPDISPNAME] => 15U/500 RACK (FOR COMPUTER RACK)
+                )
+
+            [82] => Array
+                (
+                    [DSPDISPNAME] => 15U/600 RACK (FOR COMPUTER RACK)
+                )
+
+            [83] => Array
+                (
+                    [DSPDISPNAME] => 17U RACK FRAME /600X600/STEEL/FM/CASTERS TYPE 1
+                )
+
+            [84] => Array
+                (
+                    [DSPDISPNAME] => 22U RACK FRAME /600X1000/STEEL/NRS1/CASTER TYPE 2
+                )
+
+            [85] => Array
+                (
+                    [DSPDISPNAME] => 22U RACK FRAME /600X600/STEEL/FM/CASTERS TYPE 1
+                )
+
+            [86] => Array
+                (
+                    [DSPDISPNAME] => 22U RACK FRAME /600X800/STEEL/NRS1/CASTERS TYPE 2
+                )
+
+            [87] => Array
+                (
+                    [DSPDISPNAME] => 27U RACK FRAME /600X1000/STEEL/NRS1 CASTER TYPE 2
+                )
+
+            [88] => Array
+                (
+                    [DSPDISPNAME] => 27U RACK FRAME /600X600/STEEL /FM /CASTERS TYPE 1
+                )
+
+            [89] => Array
+                (
+                    [DSPDISPNAME] => 27U RACK FRAME /600X800/STEEL/NRS1/CASTERS TYPE 2
+                )
+
+            [90] => Array
+                (
+                    [DSPDISPNAME] => 32U RACK FRAME /600X1000/STEEL/CASTERS TYPE 2
+                )
+
+            [91] => Array
+                (
+                    [DSPDISPNAME] => 32U RACK FRAME /600X650/STEEL/NRS1/CASTER TYPE 2
+                )
+
+            [92] => Array
+                (
+                    [DSPDISPNAME] => 32U RACK FRAME /600X800/STEEL/NRS1/CASTER TYPE 2
+                )
+
+            [93] => Array
+                (
+                    [DSPDISPNAME] => 42U 600X1000 TOP COVER
+                )
+
+            [94] => Array
+                (
+                    [DSPDISPNAME] => 42U RACK FRAME /600X1000/STEEL/NRS1 CASTERS TYPE 2
+                )
+
+            [95] => Array
+                (
+                    [DSPDISPNAME] => 42U RACK FRAME /600X650/STEEL/NRS1/CASTERS TYPE 2
+                )
+
+            [96] => Array
+                (
+                    [DSPDISPNAME] => 42U RACK FRAME /600X800/STEEL/NRS1 /CASTERS TYPE 2
+                )
+
+            [97] => Array
+                (
+                    [DSPDISPNAME] => 42U RACK FRAME /800X1000/STEEL /NRS1/CASTERS TYPE 2
+                )
+
+            [98] => Array
+                (
+                    [DSPDISPNAME] => 4U/400 RACK (COMPUTER RACK)
+                )
+
+            [99] => Array
+                (
+                    [DSPDISPNAME] => 6U/400 RACK (COMPUTER RACK)
+                )
+
+            [100] => Array
+                (
+                    [DSPDISPNAME] => 6U/600 Wall Mount Rack
+                )
+
+            [101] => Array
+                (
+                    [DSPDISPNAME] => 9U/400 RACK (COMPUTER RACK )
+                )
+
+            [102] => Array
+                (
+                    [DSPDISPNAME] => 9U/500 RACK (COMPUTER RACK)
+                )
+
+            [103] => Array
+                (
+                    [DSPDISPNAME] => 9U/600 RACK (COMPUTER RACK )
+                )
+
+            [104] => Array
+                (
+                    [DSPDISPNAME] => Cantilaver Shelf Tray (N)
+                )
+
+            [105] => Array
+                (
+                    [DSPDISPNAME] => CANTILEVER SHELF /TYPE2/1U
+                )
+
+            [106] => Array
+                (
+                    [DSPDISPNAME] => GLASS DOOR /15U/500 (COMPUTER RACK)
+                )
+
+            [107] => Array
+                (
+                    [DSPDISPNAME] => GLASS DOOR/600/32U/NRS1 (COMPUTER RACK )
+                )
+
+            [108] => Array
+                (
+                    [DSPDISPNAME] => GLASS DOOR /600/42U/NRS1 (COMPUTER RACK )
+                )
+
+            [109] => Array
+                (
+                    [DSPDISPNAME] => Horz.Cable Organiser/1I/Channel on Front
+                )
+
+            [110] => Array
+                (
+                    [DSPDISPNAME] => Horz.Cable Organiser /1U/loop
+                )
+
+            [111] => Array
+                (
+                    [DSPDISPNAME] => HORZ. CABLE ORGANISER/2U/LOOP
+                )
+
+            [112] => Array
+                (
+                    [DSPDISPNAME] => ITE NETWORK CIRCULATION MODULE 90CFM
+                )
+
+            [113] => Array
+                (
+                    [DSPDISPNAME] => ITE NETWORK CIRCULATION MODULE 90 CFM N
+                )
+
+            [114] => Array
+                (
+                    [DSPDISPNAME] => ITE/SERVER  RACJ AIR CIRCULATION MODULE /TOWER /180
+                )
+
+            [115] => Array
+                (
+                    [DSPDISPNAME] => ITE/SERVER RACK AIR CIRCULATION /TOWER /360 CFM
+                )
+
+            [116] => Array
+                (
+                    [DSPDISPNAME] => Keyboard Shelf/19''/Rty/800D (For Computer Rack)
+                )
+
+            [117] => Array
+                (
+                    [DSPDISPNAME] => LEVELLERS (COMPUTER RACK)
+                )
+
+            [118] => Array
+                (
+                    [DSPDISPNAME] => Mounting Hardware -CR (PACK OF 10) (N)
+                )
+
+            [119] => Array
+                (
+                    [DSPDISPNAME] => Mounting Hardware -CR (PACK OF 20)
+                )
+
+            [120] => Array
+                (
+                    [DSPDISPNAME] => RACK GROUND BUS BAR/VERTICAL/19X3/1800
+                )
+
+            [121] => Array
+                (
+                    [DSPDISPNAME] => SERVER /IT RACK MOUNT PDU 10 XINDIAN ROUND PIN 5A
+                )
+
+            [122] => Array
+                (
+                    [DSPDISPNAME] => SERVER /IT RACK MOUNT PDU 4X INDIAN ROUND PIN 5A
+                )
+
+            [123] => Array
+                (
+                    [DSPDISPNAME] => SERVER/IT RACK PDU 12X INDIAN ROUND PIN 5/15A
+                )
+
+            [124] => Array
+                (
+                    [DSPDISPNAME] => SERVER/IT RACK PDU 6X INDIAN ROUND PIN 5/15A
+                )
+
+            [125] => Array
+                (
+                    [DSPDISPNAME] => SERVER/IT RACK PDU 6X INDIAN ROUND PIN 5A
+                )
+
+            [126] => Array
+                (
+                    [DSPDISPNAME] => SERVER/IT RACK PDU 6X INDIAN ROUND PIN 5A (N)
+                )
+
+            [127] => Array
+                (
+                    [DSPDISPNAME] => Shelf/1000 (For Computer Rack)
+                )
+
+            [128] => Array
+                (
+                    [DSPDISPNAME] => Shelf/600 (For Computer Rack)
+                )
+
+            [129] => Array
+                (
+                    [DSPDISPNAME] => Shelf/650 (For Computer Rack)
+                )
+
+            [130] => Array
+                (
+                    [DSPDISPNAME] => Shelf/800 (For Computer Rack)
+                )
+
+            [131] => Array
+                (
+                    [DSPDISPNAME] => Shelf/key Board/19''Rty /650
+                )
+
+            [132] => Array
+                (
+                    [DSPDISPNAME] => Sliding Shelf/10/1000
+                )
+
+            [133] => Array
+                (
+                    [DSPDISPNAME] => UNIVERSAL RACK GROUND KIT TYPE -1
+                )
+
+            [134] => Array
+                (
+                    [DSPDISPNAME] => Vertical Cable Organiser /30U/Loop/Black
+                )
+
+            [135] => Array
+                (
+                    [DSPDISPNAME] => Verticle Cable Organiser /20U/Loop
+                )
+
+            [136] => Array
+                (
+                    [DSPDISPNAME] => Verticle Cable Organiser/38U/Loop
+                )
+
+            [137] => Array
+                (
+                    [DSPDISPNAME] => Wing Knob /Mechanical Lock/ Single Point /Type -1
+                )
+
+            [138] => Array
+                (
+                    [DSPDISPNAME] => Wing Knob /Mechanical Lock/ Single Point /Type -2
+                )
+
+        )
+
+    [DSPSTKINFO] => Array
+        (
+            [0] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 404 No
+                            [DSPCLRATE] => 2011.78
+                            [DSPCLAMTA] => -812757.54
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 20 No
+                            [DSPCLRATE] => 1.00
+                            [DSPCLAMTA] => -20.00
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 502.51
+                            [DSPCLAMTA] => -2010.03
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 100 No
+                            [DSPCLRATE] => 30.00
+                            [DSPCLAMTA] => -3000.00
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 580.76
+                            [DSPCLAMTA] => -1742.28
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 2176.47
+                            [DSPCLAMTA] => -2176.47
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 3562.50
+                            [DSPCLAMTA] => -7125.00
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 3821.61
+                            [DSPCLAMTA] => -7643.21
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 4800.00
+                            [DSPCLAMTA] => -4800.00
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 4587.50
+                            [DSPCLAMTA] => -4587.50
+                        )
+
+                )
+
+            [10] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 3000.00
+                            [DSPCLAMTA] => -6000.00
+                        )
+
+                )
+
+            [11] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 11 No
+                            [DSPCLRATE] => 2650.00
+                            [DSPCLAMTA] => -29150.00
+                        )
+
+                )
+
+            [12] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 12 No
+                            [DSPCLRATE] => 6125.24
+                            [DSPCLAMTA] => -73502.86
+                        )
+
+                )
+
+            [13] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 9925.65
+                            [DSPCLAMTA] => -9925.65
+                        )
+
+                )
+
+            [14] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 20 No
+                            [DSPCLRATE] => 1460.00
+                            [DSPCLAMTA] => -29200.00
+                        )
+
+                )
+
+            [15] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 1517.84
+                            [DSPCLAMTA] => -1517.84
+                        )
+
+                )
+
+            [16] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 22 No
+                            [DSPCLRATE] => 2686.25
+                            [DSPCLAMTA] => -59097.50
+                        )
+
+                )
+
+            [17] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 11800.00
+                            [DSPCLAMTA] => -11800.00
+                        )
+
+                )
+
+            [18] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 8 No
+                            [DSPCLRATE] => 7825.00
+                            [DSPCLAMTA] => -62599.98
+                        )
+
+                )
+
+            [19] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 3000.00
+                            [DSPCLAMTA] => -6000.00
+                        )
+
+                )
+
+            [20] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 75 No
+                            [DSPCLRATE] => 2307.36
+                            [DSPCLAMTA] => -173052.27
+                        )
+
+                )
+
+            [21] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 18 No
+                            [DSPCLRATE] => 4316.70
+                            [DSPCLAMTA] => -77700.51
+                        )
+
+                )
+
+            [22] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 13541.67
+                            [DSPCLAMTA] => -13541.67
+                        )
+
+                )
+
+            [23] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 994.08
+                            [DSPCLAMTA] => -994.08
+                        )
+
+                )
+
+            [24] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 2672.22
+                            [DSPCLAMTA] => -8016.66
+                        )
+
+                )
+
+            [25] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 3378.13
+                            [DSPCLAMTA] => -3378.13
+                        )
+
+                )
+
+            [26] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 14 No
+                            [DSPCLRATE] => 2796.52
+                            [DSPCLAMTA] => -39151.26
+                        )
+
+                )
+
+            [27] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 5129.03
+                            [DSPCLAMTA] => -5129.03
+                        )
+
+                )
+
+            [28] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 15 No
+                            [DSPCLRATE] => 620.00
+                            [DSPCLAMTA] => -9300.00
+                        )
+
+                )
+
+            [29] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 30 No
+                            [DSPCLRATE] => 4000.00
+                            [DSPCLAMTA] => -120000.00
+                        )
+
+                )
+
+            [30] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 1100.00
+                            [DSPCLAMTA] => -1100.00
+                        )
+
+                )
+
+            [31] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 1790.00
+                            [DSPCLAMTA] => -5370.00
+                        )
+
+                )
+
+            [32] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 11 No
+                            [DSPCLRATE] => 1213.64
+                            [DSPCLAMTA] => -13350.00
+                        )
+
+                )
+
+            [33] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 1383.34
+                            [DSPCLAMTA] => -1383.34
+                        )
+
+                )
+
+            [34] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 487.49
+                            [DSPCLAMTA] => -1462.48
+                        )
+
+                )
+
+            [35] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 487.49
+                            [DSPCLAMTA] => -1462.48
+                        )
+
+                )
+
+            [36] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 4500.00
+                            [DSPCLAMTA] => -9000.00
+                        )
+
+                )
+
+            [37] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 200.00
+                            [DSPCLAMTA] => -400.00
+                        )
+
+                )
+
+            [38] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 1413.46
+                            [DSPCLAMTA] => -7067.31
+                        )
+
+                )
+
+            [39] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 717 No
+                            [DSPCLRATE] => 75.66
+                            [DSPCLAMTA] => -54251.78
+                        )
+
+                )
+
+            [40] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 10 No
+                            [DSPCLRATE] => 800.00
+                            [DSPCLAMTA] => -8000.00
+                        )
+
+                )
+
+            [41] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 1432.92
+                            [DSPCLAMTA] => -5731.69
+                        )
+
+                )
+
+            [42] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 27.00
+                            [DSPCLAMTA] => -54.00
+                        )
+
+                )
+
+            [43] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 20 No
+                            [DSPCLRATE] => 40.00
+                            [DSPCLAMTA] => -800.00
+                        )
+
+                )
+
+            [44] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 45.00
+                            [DSPCLAMTA] => -225.00
+                        )
+
+                )
+
+            [45] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 83 No
+                            [DSPCLRATE] => 53.34
+                            [DSPCLAMTA] => -4427.06
+                        )
+
+                )
+
+            [46] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 45.00
+                            [DSPCLAMTA] => -225.00
+                        )
+
+                )
+
+            [47] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 72.50
+                            [DSPCLAMTA] => -145.00
+                        )
+
+                )
+
+            [48] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 195 No
+                            [DSPCLRATE] => 65.94
+                            [DSPCLAMTA] => -12857.53
+                        )
+
+                )
+
+            [49] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 72.50
+                            [DSPCLAMTA] => -362.50
+                        )
+
+                )
+
+            [50] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 72.50
+                            [DSPCLAMTA] => -145.00
+                        )
+
+                )
+
+            [51] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 90.00
+                            [DSPCLAMTA] => -270.00
+                        )
+
+                )
+
+            [52] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 55 No
+                            [DSPCLRATE] => 90.00
+                            [DSPCLAMTA] => -4950.00
+                        )
+
+                )
+
+            [53] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 90.00
+                            [DSPCLAMTA] => -450.00
+                        )
+
+                )
+
+            [54] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 90.00
+                            [DSPCLAMTA] => -270.00
+                        )
+
+                )
+
+            [55] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 20 No
+                            [DSPCLRATE] => 101.95
+                            [DSPCLAMTA] => -2039.00
+                        )
+
+                )
+
+            [56] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 138 No
+                            [DSPCLRATE] => 50.00
+                            [DSPCLAMTA] => -6900.00
+                        )
+
+                )
+
+            [57] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 160 No
+                            [DSPCLRATE] => 40.00
+                            [DSPCLAMTA] => -6400.00
+                        )
+
+                )
+
+            [58] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => Array
+                                (
+                                )
+
+                            [DSPCLRATE] => Array
+                                (
+                                )
+
+                            [DSPCLAMTA] => -41232.11
+                        )
+
+                )
+
+            [59] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 942.09
+                            [DSPCLAMTA] => -1884.17
+                        )
+
+                )
+
+            [60] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 21500.00
+                            [DSPCLAMTA] => -21500.00
+                        )
+
+                )
+
+            [61] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 17847.94
+                            [DSPCLAMTA] => -17847.94
+                        )
+
+                )
+
+            [62] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 16 No
+                            [DSPCLRATE] => 6618.76
+                            [DSPCLAMTA] => -105900.12
+                        )
+
+                )
+
+            [63] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 2006.74
+                            [DSPCLAMTA] => -4013.48
+                        )
+
+                )
+
+            [64] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 17414.76
+                            [DSPCLAMTA] => -17414.76
+                        )
+
+                )
+
+            [65] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 16000.00
+                            [DSPCLAMTA] => -32000.00
+                        )
+
+                )
+
+            [66] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 10 No
+                            [DSPCLRATE] => 5067.19
+                            [DSPCLAMTA] => -50671.88
+                        )
+
+                )
+
+            [67] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 1800.00
+                            [DSPCLAMTA] => -1800.00
+                        )
+
+                )
+
+            [68] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => Array
+                                (
+                                )
+
+                            [DSPCLAMTA] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [69] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => Array
+                                (
+                                )
+
+                            [DSPCLAMTA] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [70] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => Array
+                                (
+                                )
+
+                            [DSPCLAMTA] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [71] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 11500.00
+                            [DSPCLAMTA] => -11500.00
+                        )
+
+                )
+
+            [72] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 11500.00
+                            [DSPCLAMTA] => -11500.00
+                        )
+
+                )
+
+            [73] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 35 No
+                            [DSPCLRATE] => 140.32
+                            [DSPCLAMTA] => -4911.04
+                        )
+
+                )
+
+            [74] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 4450.00
+                            [DSPCLAMTA] => -4450.00
+                        )
+
+                )
+
+            [75] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 34 No
+                            [DSPCLRATE] => 13.56
+                            [DSPCLAMTA] => -461.04
+                        )
+
+                )
+
+            [76] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 869 No
+                            [DSPCLRATE] => 1075.73
+                            [DSPCLAMTA] => -934809.09
+                        )
+
+                )
+
+            [77] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 8 No
+                            [DSPCLRATE] => 2398.45
+                            [DSPCLAMTA] => -19187.63
+                        )
+
+                )
+
+            [78] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 11 No
+                            [DSPCLRATE] => 3074.14
+                            [DSPCLAMTA] => -33815.59
+                        )
+
+                )
+
+            [79] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 3556.11
+                            [DSPCLAMTA] => -14224.44
+                        )
+
+                )
+
+            [80] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 7 No
+                            [DSPCLRATE] => 2704.89
+                            [DSPCLAMTA] => -18934.26
+                        )
+
+                )
+
+            [81] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 9 No
+                            [DSPCLRATE] => 3168.95
+                            [DSPCLAMTA] => -28520.53
+                        )
+
+                )
+
+            [82] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 7 No
+                            [DSPCLRATE] => 3895.05
+                            [DSPCLAMTA] => -27265.38
+                        )
+
+                )
+
+            [83] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 7040.64
+                            [DSPCLAMTA] => -21121.92
+                        )
+
+                )
+
+            [84] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 11138.57
+                            [DSPCLAMTA] => -33415.72
+                        )
+
+                )
+
+            [85] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 7673.74
+                            [DSPCLAMTA] => -7673.74
+                        )
+
+                )
+
+            [86] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 9916.88
+                            [DSPCLAMTA] => -19833.76
+                        )
+
+                )
+
+            [87] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 11708.34
+                            [DSPCLAMTA] => -35125.02
+                        )
+
+                )
+
+            [88] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 8628.53
+                            [DSPCLAMTA] => -8628.53
+                        )
+
+                )
+
+            [89] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 11522.62
+                            [DSPCLAMTA] => -46090.48
+                        )
+
+                )
+
+            [90] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 12438.08
+                            [DSPCLAMTA] => -12438.08
+                        )
+
+                )
+
+            [91] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 9584.07
+                            [DSPCLAMTA] => -9584.07
+                        )
+
+                )
+
+            [92] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 12632.34
+                            [DSPCLAMTA] => -12632.34
+                        )
+
+                )
+
+            [93] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 2500.00
+                            [DSPCLAMTA] => -2500.00
+                        )
+
+                )
+
+            [94] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 10249.43
+                            [DSPCLAMTA] => -10249.43
+                        )
+
+                )
+
+            [95] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 14944.03
+                            [DSPCLAMTA] => -44832.08
+                        )
+
+                )
+
+            [96] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 12832.24
+                            [DSPCLAMTA] => -38496.71
+                        )
+
+                )
+
+            [97] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 20183.32
+                            [DSPCLAMTA] => -60549.97
+                        )
+
+                )
+
+            [98] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 15 No
+                            [DSPCLRATE] => 1226.71
+                            [DSPCLAMTA] => -18400.68
+                        )
+
+                )
+
+            [99] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 22 No
+                            [DSPCLRATE] => 1622.40
+                            [DSPCLAMTA] => -35692.84
+                        )
+
+                )
+
+            [100] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 1920.91
+                            [DSPCLAMTA] => -5762.73
+                        )
+
+                )
+
+            [101] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 16 No
+                            [DSPCLRATE] => 1961.33
+                            [DSPCLAMTA] => -31381.34
+                        )
+
+                )
+
+            [102] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 15 No
+                            [DSPCLRATE] => 2257.20
+                            [DSPCLAMTA] => -33858.00
+                        )
+
+                )
+
+            [103] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 12 No
+                            [DSPCLRATE] => 3061.84
+                            [DSPCLAMTA] => -36742.08
+                        )
+
+                )
+
+            [104] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 138.91
+                            [DSPCLAMTA] => -416.73
+                        )
+
+                )
+
+            [105] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 27 No
+                            [DSPCLRATE] => 229.89
+                            [DSPCLAMTA] => -6207.04
+                        )
+
+                )
+
+            [106] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 592.80
+                            [DSPCLAMTA] => -2964.00
+                        )
+
+                )
+
+            [107] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 861.88
+                            [DSPCLAMTA] => -1723.75
+                        )
+
+                )
+
+            [108] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 1962.38
+                            [DSPCLAMTA] => -1962.38
+                        )
+
+                )
+
+            [109] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 146 No
+                            [DSPCLRATE] => 256.31
+                            [DSPCLAMTA] => -37421.00
+                        )
+
+                )
+
+            [110] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 23 No
+                            [DSPCLRATE] => 131.92
+                            [DSPCLAMTA] => -3034.11
+                        )
+
+                )
+
+            [111] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 162.50
+                            [DSPCLAMTA] => -812.50
+                        )
+
+                )
+
+            [112] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 18 No
+                            [DSPCLRATE] => 417.45
+                            [DSPCLAMTA] => -7514.17
+                        )
+
+                )
+
+            [113] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 11 No
+                            [DSPCLRATE] => 235.00
+                            [DSPCLAMTA] => -2585.00
+                        )
+
+                )
+
+            [114] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 21 No
+                            [DSPCLRATE] => 1052.55
+                            [DSPCLAMTA] => -22103.59
+                        )
+
+                )
+
+            [115] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 14 No
+                            [DSPCLRATE] => 2132.93
+                            [DSPCLAMTA] => -29860.98
+                        )
+
+                )
+
+            [116] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 800.00
+                            [DSPCLAMTA] => -3200.00
+                        )
+
+                )
+
+            [117] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 191.75
+                            [DSPCLAMTA] => -958.75
+                        )
+
+                )
+
+            [118] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 113 No
+                            [DSPCLRATE] => 0.11
+                            [DSPCLAMTA] => -11.96
+                        )
+
+                )
+
+            [119] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 17 No
+                            [DSPCLRATE] => 93.45
+                            [DSPCLAMTA] => -1588.67
+                        )
+
+                )
+
+            [120] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 1670.50
+                            [DSPCLAMTA] => -3341.00
+                        )
+
+                )
+
+            [121] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 927.12
+                            [DSPCLAMTA] => -3708.46
+                        )
+
+                )
+
+            [122] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 35 No
+                            [DSPCLRATE] => 331.09
+                            [DSPCLAMTA] => -11588.15
+                        )
+
+                )
+
+            [123] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 5 No
+                            [DSPCLRATE] => 1958.31
+                            [DSPCLAMTA] => -9791.56
+                        )
+
+                )
+
+            [124] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 17 No
+                            [DSPCLRATE] => 785.95
+                            [DSPCLAMTA] => -13361.13
+                        )
+
+                )
+
+            [125] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 144 No
+                            [DSPCLRATE] => 440.23
+                            [DSPCLAMTA] => -63393.31
+                        )
+
+                )
+
+            [126] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 1 No
+                            [DSPCLRATE] => 250.00
+                            [DSPCLAMTA] => -250.00
+                        )
+
+                )
+
+            [127] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 16 No
+                            [DSPCLRATE] => 829.75
+                            [DSPCLAMTA] => -13276.00
+                        )
+
+                )
+
+            [128] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 12 No
+                            [DSPCLRATE] => 400.14
+                            [DSPCLAMTA] => -4801.68
+                        )
+
+                )
+
+            [129] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 445.00
+                            [DSPCLAMTA] => -1335.00
+                        )
+
+                )
+
+            [130] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 8 No
+                            [DSPCLRATE] => 531.66
+                            [DSPCLAMTA] => -4253.30
+                        )
+
+                )
+
+            [131] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 7 No
+                            [DSPCLRATE] => 624.92
+                            [DSPCLAMTA] => -4374.45
+                        )
+
+                )
+
+            [132] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 4 No
+                            [DSPCLRATE] => 975.00
+                            [DSPCLAMTA] => -3900.00
+                        )
+
+                )
+
+            [133] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 393.24
+                            [DSPCLAMTA] => -786.48
+                        )
+
+                )
+
+            [134] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 10 No
+                            [DSPCLRATE] => 212.51
+                            [DSPCLAMTA] => -2125.07
+                        )
+
+                )
+
+            [135] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 3 No
+                            [DSPCLRATE] => 360.00
+                            [DSPCLAMTA] => -1080.00
+                        )
+
+                )
+
+            [136] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 9 No
+                            [DSPCLRATE] => 234.00
+                            [DSPCLAMTA] => -2106.00
+                        )
+
+                )
+
+            [137] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 10 No
+                            [DSPCLRATE] => 148.20
+                            [DSPCLAMTA] => -1482.00
+                        )
+
+                )
+
+            [138] => Array
+                (
+                    [DSPSTKCL] => Array
+                        (
+                            [DSPCLQTY] => 2 No
+                            [DSPCLRATE] => 266.76
+                            [DSPCLAMTA] => -533.52
+                        )
+
+                )
+
+        )
+
+)
+database connected.

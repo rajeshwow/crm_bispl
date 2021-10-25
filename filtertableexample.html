@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <select class="cl_country" data-attribute="class">
+            <option value="all">Select Class </option>
+            <option value="India">india</option>
+            <option value="usa">usa</option>
+            <option value="uk">uk</option>
+</select>
+<select class="cl_age" data-attribute="class">
+            <option value="all">Select Class </option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="80">80</option>
+</select>
+<table  id=table11>
+  <tr>
+    <th>name</th>
+    <th>country</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>USA</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>UK</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>INDIA</td>
+    <td>80</td>
+  </tr>
+     
+  <tr>
+    <td>sam</td>
+    <td>AUSTRALIA</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>joe</td>
+    <td>INDIA</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>alan</td>
+    <td>USA</td>
+    <td>60</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    $(".cl_country").on("change", function () {
+        searchterm = $(this).val();                 
+        $('#table11 tbody tr').each(function () {                    
+            var sel = $(this);
+            var txt = sel.find('td:eq(1)').text();
+            if (searchterm != 'all') {
+                if (txt.indexOf(searchterm) === -1) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            }
+            else
+            {                       
+                $('#table11 tbody tr').show();
+            }
+        });
+    });
+    $(".cl_age").on("change", function () {
+        searchterm = $(this).val();
+          
+        $('#table11 tbody tr').each(function () {
+             
+            var sel = $(this);
+            var txt = sel.find('td:eq(2)').text();
+            if (searchterm != 'all') {
+ 
+ 
+                if (txt.indexOf(searchterm) === -1) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+            }
+            else
+            {                       
+                $('#table11 tbody tr').show();
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
+

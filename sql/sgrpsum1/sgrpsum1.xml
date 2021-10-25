@@ -1,0 +1,23 @@
+<!--This XML document contains tags to fetch "Stock Group Summary" from Tally-->
+<!--It is equivalent to using the following option in Tally Software manually-->
+<!--Option: Gateway of Tally @Display @Inventory books @Group Summary-->
+<ENVELOPE>
+<HEADER>
+<TALLYREQUEST>Export Data</TALLYREQUEST>
+</HEADER>
+<BODY>
+<EXPORTDATA>
+<REQUESTDESC>
+<STATICVARIABLES>
+<!--Specify the Period here-->
+<SVFROMDATE>20060401</SVFROMDATE>
+<SVTODATE>20070331</SVTODATE>
+<!--Specify the StockGroup Name here-->
+<STOCKGROUPNAME>Spares</STOCKGROUPNAME>
+</STATICVARIABLES>
+<!--Specify the Report Name here-->
+<REPORTNAME>STOCKSUMMARY</REPORTNAME>
+</REQUESTDESC>
+</EXPORTDATA>
+</BODY>
+</ENVELOPE>

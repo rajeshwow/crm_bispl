@@ -1,0 +1,22 @@
+;;XML tags to fetch Vouchers of a specific Voucher Type (say Sales)
+;;including all Voucher-types which fall under it.
+;;
+;;These XML tags are to be used with TDL SALESREG.TXT
+;;========================================================================
+<ENVELOPE>
+<HEADER>
+<TALLYREQUEST>Export Data</TALLYREQUEST>
+</HEADER>
+<BODY>
+<EXPORTDATA>
+<REQUESTDESC>
+<STATICVARIABLES>
+</STATICVARIABLES>
+
+<!--Specify the Report Name here-->
+<REPORTNAME>RTS SalesVouchers</REPORTNAME>
+
+</REQUESTDESC>
+</EXPORTDATA>
+</BODY>
+</ENVELOPE>

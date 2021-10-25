@@ -1,0 +1,38 @@
+<!--This XML document contains tags to fetch SALES-REGISTER details from Tally-->
+<!--It is equivalent to using the following option in Tally Software manually-->
+<!--Option: Gateway of Tally @Display @Sales Register @SelectAnyMonth @Alt+E-->
+
+<ENVELOPE>
+<HEADER>
+<TALLYREQUEST>Export Data</TALLYREQUEST>
+</HEADER>
+<BODY>
+<EXPORTDATA>
+<REQUESTDESC>
+<STATICVARIABLES>
+
+<!--Specify the Period here-->
+<SVFROMDATE>20070401</SVFROMDATE>
+<SVTODATE>20080331</SVTODATE>
+
+<VOUCHERTYPENAME>Sales</VOUCHERTYPENAME>
+
+<!--Detailed or Condensed Format-->
+<EXPLODEFLAG>Yes</EXPLODEFLAG>
+
+<!--Displays Bill-wise details-->
+<DBBILLEXPLODEFLAG>Yes</DBBILLEXPLODEFLAG>
+
+<!--Display Stock Item details-->
+<DBINVEXPLODEFLAG>Yes</DBINVEXPLODEFLAG>
+
+<!--Specify the Report FORMAT here-->
+<SVEXPORTFORMAT>$$SysName:HTML</SVEXPORTFORMAT>
+</STATICVARIABLES>
+
+<!--Specify the Report Name here-->
+<REPORTNAME>Voucher Register</REPORTNAME>
+</REQUESTDESC>
+</EXPORTDATA>
+</BODY>
+</ENVELOPE>

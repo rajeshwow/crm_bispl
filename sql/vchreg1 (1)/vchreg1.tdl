@@ -1,0 +1,4 @@
+;;To be used with VCHREG1.XML file to fetch Sales Register in HTML format
+;;with Bill-wise and Stock-Item-wise details
+[#Report: Voucher Register] 
+  Set: ExplodeFlag: ##ExplodeFlag

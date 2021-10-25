@@ -1,0 +1,26 @@
+<!--Gateway of Tally @Display @Statement of Accounts...contd-->
+<!--Cost Centres @Cost Centre Breakup-->
+<ENVELOPE>
+<HEADER>
+<TALLYREQUEST>Export Data</TALLYREQUEST>
+</HEADER>
+<BODY>
+<EXPORTDATA>
+<REQUESTDESC>
+<STATICVARIABLES>
+
+<!--TO DO-->
+<!--Specify the Cost Centre Name-->
+<COSTCENTRENAME>BGL</COSTCENTRENAME>
+
+<!--Specify the Export format here  HTML or XML or SDF-->
+<SVEXPORTFORMAT>$$SysName:HTML</SVEXPORTFORMAT>
+</STATICVARIABLES>
+
+<!--Report Name-->
+<REPORTNAME>Cost Centre Breakup</REPORTNAME>
+
+</REQUESTDESC>
+</EXPORTDATA>
+</BODY>
+</ENVELOPE>
