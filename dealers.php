@@ -70,7 +70,7 @@ table thead th {
 <div class="container-fluid">
  <div class="right-part">
   <div class="rightpartitle">
-    <span class="acttitle">Dealerssss</span>
+    <span class="acttitle">Dealers</span>
   </div>
   <br>
   <div class="row">
