@@ -1,18 +1,26 @@
-<?php session_start(); ?>
 <?php 
+session_start(); 
 date_default_timezone_set("Asia/Kolkata"); 
-// error_reporting(E_ERROR | E_WARNING | E_PARSE);
 error_reporting(0);
-?>
-<?php 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bispl";
 
-// Create connection
+
+if ($_SERVER['SERVER_NAME'] == 'bispl.net.in') {
+  $servername = "localhost";
+  $dbname = "i7232841_ma1";
+  $username = "lha78u13omzr";
+  $password = "BinaryCpanel#1";
+}
+else{
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "bispl"; 
+}
+
+
+
 $con = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
+
 if (!$con) {
   die("Connection failed: " . mysqli_connect_error());
 }
