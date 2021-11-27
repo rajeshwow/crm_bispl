@@ -2,6 +2,17 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 
+<?php 
+	$filepath = "";
+	if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+	   $filepath = "https://".$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']); 
+	}  
+		  
+   else {
+	   $filepath = "http://".$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']);
+   } 
+?>
+
  
 <?php 
 if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
@@ -106,43 +117,23 @@ table thead th {
 <!-- <br> -->
 
 
-<br>
+<br> 
 <div class="row">
  <div class="col-lg-12">
   <div class="outsidetable">
     <table class="table table-fixed table-bordered" id="myTable">
      <?php
-     $sql = "SELECT email, password,usertype FROM crm_login where email = '".$_SESSION['email']."' ";
-     $result = mysqli_query($con, $sql) or die("Error: " . mysqli_error($con));
-     while($rw= mysqli_fetch_assoc($result))
-      $row[] = $rw;
-    $ueraccessquery = "SELECT * from crm_useraccess where email= '".$_SESSION['email']."' ";
-    $result_ueraccessquery = mysqli_query($con, $ueraccessquery);
-    while($row_ueraccessquery = mysqli_fetch_assoc($result_ueraccessquery))
-      $ueraccess_arr[] = $row_ueraccessquery;
-
-    $ueraccess_str = $ueraccess_arr[0]['dealer_city'];
-   $x_ueraccess_str = explode(",",$ueraccess_str);
-   for ($sri=0; $sri < count($x_ueraccess_str)-1; $sri++) { 
-
-    $dealer_arrs .= "'".$x_ueraccess_str[$sri]."'". ",";
-  }
-  $dealer_arrs = rtrim($dealer_arrs, ",");
-
-    if ($row[0]['usertype'] == 'Admin') {
-      $sql = "SELECT * FROM crm_dealer";
-    }
-    else{
-      $sql = "SELECT * FROM crm_dealer WHERE city IN ($dealer_arrs)";
-    }
-
-
+     $session_email = $_SESSION['email'];
+	 $url =$filepath.'/api/getdealers.php?email='.$session_email; 
+  
     
-    $result = mysqli_query($con, $sql);
-    while($row2 = mysqli_fetch_assoc($result))
-     $product_data[] = $row2;
-   $counnt = count($product_data);
-   $i = 0;
+     $client = curl_init($url);
+     curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
+      $response = curl_exec($client);
+     $product_data = json_decode($response,true);
+	 $product_data = $product_data['data'];
+     $count = count($product_data);
+    $i = 0;
 
 
 
@@ -176,10 +167,10 @@ table thead th {
   </thead>
   <tbody>
     <?php 
-    if (!$counnt) { ?>
+    if (!$count) { ?>
       <tr><td colspan="15">No record found.</td></tr>
     <?php }
-    while($i<$counnt){
+    while($i<$count){
      ?>
      <tr>
       <td class="acticonfirst">
