@@ -11,6 +11,7 @@ if ($_SERVER['SERVER_NAME'] == 'bispl.net.in') {
   $password = "BinaryCpanel#1";
 }
 else{
+  
   $servername = "localhost";
   $username = "root";
   $password = "";
