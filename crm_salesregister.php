@@ -212,7 +212,7 @@ while($rw= mysqli_fetch_assoc($result))
 $(document).ready(function(){
   $("myInput").keyup(function(){
    var bla = $('#txt_name').val().toUpperCase();
-   $( ".party" ).each(function(){
+   $( ".accordion" ).each(function(){
         var htxt=$(this).text().toUpperCase();
         if (htxt.indexOf(bla) > -1) {
             $(this).show();
