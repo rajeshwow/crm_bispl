@@ -171,7 +171,7 @@ while ($i_button<$count_getparty_query) {
 	?>
 	<button type="button" class="accordion">
 	<span class="dates"><?php echo date_format(date_create($arr_getparty_query[$i_button]['vdate']),"d-m-Y");?></span>
-	<span class="party"><?php echo $arr_getparty_query[$i_button]['party']?></span>
+	<span class="party" ><?php echo $arr_getparty_query[$i_button]['party']?></span>
 	<span class="vchtype">Sales</span>
 	<span class="dbt"><?php echo $arr_getparty_query[$i_button]['amount']?></span>
 	<span class="cdt">-</span>

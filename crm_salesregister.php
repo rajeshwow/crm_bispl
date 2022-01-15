@@ -47,7 +47,7 @@ while($rw= mysqli_fetch_assoc($result))
 	margin-bottom: 1px;
 	transition: max-height 0.2s ease-out;
 }
-	.ranges{
+	.ranges{ 
 	text-align: right;
 }
 #advbutton{
@@ -72,7 +72,22 @@ while($rw= mysqli_fetch_assoc($result))
 		<?php 
 				if ($row[0]['usertype']=='Admin' || $user_access[0]['salesregister']== 'Yes') { ?>
 		<div class="row">
-			<div class="col-lg-11">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<ul class="list-inline">
+					<li>
+						<div class="input-group">
+						<span class="input-group-addon"><i class="fas fa-search"></i></span>
+						<input type="text" id="myInput" class="form-control "  placeholder="Search ..." />
+					</div>
+					</li>
+					<li>
+					<span class="recordcount"> </span>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<div class="col-lg-5">
 				<div class="ranges">
 					<form class="form-inline" action="">
 						<div class="form-group" id="yearly" >
@@ -192,5 +207,20 @@ while($rw= mysqli_fetch_assoc($result))
 				}
 			});
 	});
+</script>
+<script>
+$(document).ready(function(){
+  $("myInput").keyup(function(){
+   var bla = $('#txt_name').val().toUpperCase();
+   $( ".party" ).each(function(){
+        var htxt=$(this).text().toUpperCase();
+        if (htxt.indexOf(bla) > -1) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
+  });
+});
 </script>
 <?php include 'footer.php'; ?>
