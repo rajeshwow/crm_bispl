@@ -735,8 +735,8 @@ while ($i_button<$count_getparty_query) {
 																					style = style + "table {width: 100%;font: 17px Calibri;}";
 																					style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
 																						style = style + "padding: 2px 3px;text-align: left;}";
-																						style = style + " td {font-size: 24px}";
-																						style = style + " th {font-size: 36px}";
+																						style = style + " td {font-size: 16px}";
+																						style = style + " th {font-size: 20px}";
 																						style = style + "</style>";
 																						
 																						// CREATE A WINDOW OBJECT.
