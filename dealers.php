@@ -242,7 +242,39 @@ table thead th {
       var secondCol = rows[i].cells[1].textContent.toUpperCase();
       var thirdCol = rows[i].cells[2].textContent.toUpperCase();
       var forthCol = rows[i].cells[3].textContent.toUpperCase();
-      if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1|| thirdCol.indexOf(filter) > -1|| forthCol.indexOf(filter) > -1) {
+      var fifth = rows[i].cells[4].textContent.toUpperCase();
+      var sixth = rows[i].cells[5].textContent.toUpperCase();
+      var seventh = rows[i].cells[6].textContent.toUpperCase();
+      var eighth = rows[i].cells[7].textContent.toUpperCase();
+      var ninth = rows[i].cells[8].textContent.toUpperCase();
+      var tenth = rows[i].cells[9].textContent.toUpperCase();
+      var eleventh = rows[i].cells[10].textContent.toUpperCase();
+      var twelth = rows[i].cells[11].textContent.toUpperCase();
+      var thirteen = rows[i].cells[12].textContent.toUpperCase();
+      var forteen = rows[i].cells[16].textContent.toUpperCase();
+      var fifteen = rows[i].cells[13].textContent.toUpperCase();
+      var sexteen = rows[i].cells[14].textContent.toUpperCase();
+      var seventeen = rows[i].cells[15].textContent.toUpperCase();
+
+      if (firstCol.indexOf(filter) > -1 || 
+      secondCol.indexOf(filter) > -1|| 
+      thirdCol.indexOf(filter) > -1|| 
+      forthCol.indexOf(filter) > -1 ||
+      fifth.indexOf(filter) > -1 ||
+      sixth.indexOf(filter) > -1 ||
+      seventh.indexOf(filter) > -1 ||
+      eighth.indexOf(filter) > -1 ||
+      ninth.indexOf(filter) > -1 ||
+      tenth.indexOf(filter) > -1 ||
+      eleventh.indexOf(filter) > -1 ||
+      twelth.indexOf(filter) > -1 ||
+      thirteen.indexOf(filter) > -1 ||
+      forteen.indexOf(filter) > -1 ||
+      fifteen.indexOf(filter) > -1 ||
+      sexteen.indexOf(filter) > -1 ||
+      seventeen.indexOf(filter) > -1 ||
+
+      ) {
         rows[i].style.display = "";
         cccc++;
       } else {

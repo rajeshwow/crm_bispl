@@ -76,13 +76,24 @@ while($rw= mysqli_fetch_assoc($result))
 				<div class="ranges">
 					<form class="form-inline" action="">
 						<div class="form-group" id="yearly" >
-							<select class="form-control" id="seleted_year" >
+							<!-- <select class="form-control" id="seleted_year" >
 								<option value="2021" selected="selected">2021</option>
 								<option value="2020">2020</option>
 								<option value="2019">2019</option>
 								<option value="2018">2018</option>
 								<option value="2017">2017</option>
-							</select>
+							</select> -->
+							<?php
+								$currently_selected = date('Y'); 
+								$earliest_year = 2015; 
+								$latest_year = date('Y'); 
+
+								print '<select class="form-control" id="seleted_year">';
+								foreach ( range( $latest_year, $earliest_year ) as $i ) {
+									print '<option value="'.$i.'"'.($i === $currently_selected ? ' selected="selected"' : '').'>'.$i.'</option>';
+								}
+								print '</select>';
+							?>
 						</div>
 						<div class="form-group" id="monthly" >
 							<select class="form-control datecheck" id="months" >
@@ -111,7 +122,9 @@ while($rw= mysqli_fetch_assoc($result))
 
 		<div class="row">
 			<div id="sales_register">
-				
+				<div id="loadingss">
+					<h4>Loading...</h4>
+				</div>
 			</div>
 		</div>
 		<?php	} else{ ?>
@@ -136,6 +149,8 @@ while($rw= mysqli_fetch_assoc($result))
 			$('#months').prop('selectedIndex', 0);
 			$('#months').toggleClass('animate__animated animate__shakeX animate__repeat-1');
 		});
+
+		
 		$("#months").on('change', function() {
 			var month = $(this).val();
 			var years = $("#seleted_year").val();
@@ -157,7 +172,7 @@ while($rw= mysqli_fetch_assoc($result))
 				}
 			});
 		});
-	});
+	}); 
 	$(document).ready(function(){
 		$.ajax({
 				type: "POST",

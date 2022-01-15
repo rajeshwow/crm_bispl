@@ -4,7 +4,8 @@ date_default_timezone_set("Asia/Kolkata");
 error_reporting(0);
 
 
-if ($_SERVER['SERVER_NAME'] == 'bispl.net.in') {
+
+if ($_SERVER['SERVER_NAME'] == 'www.bispl.net.in') {
   $servername = "localhost";
   $dbname = "i7232841_ma1";
   $username = "lha78u13omzr";
