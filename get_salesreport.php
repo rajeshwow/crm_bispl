@@ -6,12 +6,13 @@ while($row_ueraccessquery = mysqli_fetch_assoc($result_ueraccessquery))
 	$ueraccess_arr[] = $row_ueraccessquery;
 ?>
 <?php
-$yrss = explode('-', $_POST['yr']);
-$start_yearsss = $yrss[0];
+  $yrss = explode('-', $_POST['yr']);
+
+  echo $start_yearsss = $yrss[0];
 $reset_year = $start_yearsss;
-$end_yearsss = $yrss[1];
+echo $end_yearsss = $yrss[1];
 $start_date = $start_yearsss . '-04-01';
-$end_date = $end_yearsss . '-03-31';
+$end_date = $end_yearsss . '-03-31'; 
 
 
 $ueraccess_str = $ueraccess_arr[0]['salesreport_access'];

@@ -824,7 +824,7 @@ $(document).ready(function(){
    });
    });
    
-   
+    
    
    $(document).ready(function() { 
       var daysss = $("#updategraph").val();

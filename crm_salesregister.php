@@ -210,7 +210,7 @@ while($rw= mysqli_fetch_assoc($result))
 </script>
 <script>
 $(document).ready(function(){
-  $("#myInput").keyup(function(){
+  $("#myInput").keyup(function(){ 
    var bla = $('#myInput').val().toUpperCase();
    $( ".accordion" ).each(function(){
         var htxt=$(this).text().toUpperCase();

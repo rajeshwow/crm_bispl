@@ -272,9 +272,7 @@ table thead th {
       forteen.indexOf(filter) > -1 ||
       fifteen.indexOf(filter) > -1 ||
       sexteen.indexOf(filter) > -1 ||
-      seventeen.indexOf(filter) > -1 ||
-
-      ) {
+      seventeen.indexOf(filter) > -1       ) {
         rows[i].style.display = "";
         cccc++;
       } else {
