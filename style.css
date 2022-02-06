@@ -48,7 +48,7 @@ ul#inlineform li {
 }
 .outsidetable{
  overflow: scroll;
- height: 620px;
+ height: 98vh;
 }
 .outsidetable::-webkit-scrollbar {
  width: 0px;
