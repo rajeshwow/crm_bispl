@@ -471,18 +471,18 @@ table thead th {
   <script>
   $(document).ready(function(){
     LocalSuspense = localStorage.getItem('suspenseStatus');
-
-    if (!LocalSuspense) {
+    console.log("hi",LocalSuspense)
+    if (LocalSuspense == null ) {
       localStorage.setItem('suspenseStatus',"All")
     }
-    $("select#suspenseStatus").val(LocalSuspense);
+    $("select#suspenseStatus").val(localStorage.getItem('suspenseStatus'));
 
     var selectedStatus =   $('#suspenseStatus :selected').text()
     // alert(selectedStatus)
     $.ajax({
       url:"getsuspense.php",
       type:"POST",
-      data: 'selectedStatus='+LocalSuspense,
+      data: 'selectedStatus='+localStorage.getItem('suspenseStatus'),
       beforeSend: function(){
         // Show image container
         $("#loadingss").show();
