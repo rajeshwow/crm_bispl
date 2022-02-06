@@ -688,7 +688,7 @@ ul{
                          // alert('please update records by serial number.<br> You skipped '+ skippedrow+ ' records.' );
                       }
 
-                   });
+      });
       $("#advbutton").click(function(){
         $("#advsearch").slideToggle();
      });
@@ -781,9 +781,7 @@ $(document).ready(function(){
  }
 
 });
-   return false;
-   
-   
+   return false; 
 });
 
 
