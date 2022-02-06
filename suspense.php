@@ -176,7 +176,7 @@ table thead th {
 <li>
 <div class="input-group">
 <select class="form-control" id="suspenseStatus">
-<option value="">Select Status</option>
+<option disabled value="">Select Status</option>
 <option selected="true" value="All">All</option> 
 <option value="Open">Open</option> 
 <option value="Failed">Failed</option>
@@ -470,12 +470,19 @@ table thead th {
   
   <script>
   $(document).ready(function(){
+    LocalSuspense = localStorage.getItem('suspenseStatus');
+
+    if (!LocalSuspense) {
+      localStorage.setItem('suspenseStatus',"All")
+    }
+    $("select#suspenseStatus").val(LocalSuspense);
+
     var selectedStatus =   $('#suspenseStatus :selected').text()
     // alert(selectedStatus)
     $.ajax({
       url:"getsuspense.php",
       type:"POST",
-      data: 'selectedStatus='+selectedStatus,
+      data: 'selectedStatus='+LocalSuspense,
       beforeSend: function(){
         // Show image container
         $("#loadingss").show();
@@ -502,6 +509,7 @@ table thead th {
   $(document).ready(function(){
       $("#suspenseStatus").change(function() {
          var selectedStatus = $(this).val();
+         localStorage.setItem('suspenseStatus',selectedStatus)
          $.ajax({
             url:"getsuspense.php",
             type:"POST",
