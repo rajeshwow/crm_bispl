@@ -6,6 +6,7 @@ if(isset($_POST["submit"]))
 {         
   $epscolcount= 24;
   $crm_dealer = 17;
+  $suspenseColCount = 12;
 
   $tablename = $_POST['tablename'];
   $file = $_FILES['file']['tmp_name'];
@@ -45,12 +46,33 @@ if(isset($_POST["submit"]))
       $id2=mysqli_real_escape_string($con,$filesop[15]);
       $gst=mysqli_real_escape_string($con,$filesop[16]);
 
-      
-
       $sql = "INSERT INTO crm_dealer (company,contact_person,mobile,telephone,address1,address2,address3,city,district,state,email,homeaddress1,homeaddress2,id1,id2,gst) VALUES ('$company','$contact_person','$mobile','$landline','$address1','$address2','$address3','$city','$district','$state','$email','$Permanantadd1','$Permanantadd2','$id1','$id2','$gst') ";
       $stmt = mysqli_prepare($con,$sql);
       mysqli_stmt_execute($stmt);
+      $c = $c + 1;
+    }
+  }
+  else if ($tablename == 'suspense') {
+    while(($filesop = fgetcsv($handle, 1000, ",")) !== false)
+    {
+      if($flag) { $flag = false; continue; }
+      $party=mysqli_real_escape_string($con,$filesop[1]);
+      $checkNo=mysqli_real_escape_string($con,$filesop[2]);
+      $bill_date=mysqli_real_escape_string($con,$filesop[3]);
+      $bank=mysqli_real_escape_string($con,$filesop[4]);
+      $amount=mysqli_real_escape_string($con,$filesop[5]);
+      $billno=mysqli_real_escape_string($con,$filesop[6]);
+      $remarks=mysqli_real_escape_string($con,$filesop[7]);
+      $status=mysqli_real_escape_string($con,$filesop[8]);
+      $requestedDate=mysqli_real_escape_string($con,$filesop[9]);
+      $requestedBy=mysqli_real_escape_string($con,$filesop[10]);
+      $approvedDate=mysqli_real_escape_string($con,$filesop[11]);
+      $approvedBy=mysqli_real_escape_string($con,$filesop[12]);
 
+      $sql = "INSERT INTO suspense (party,chequeno,bill_date,bank,amount,billno,remarks,status,requested_date,requested_by,approved_date,approved_by) VALUES 
+      ('$party','$checkNo','$bill_date','$bank','$amount','$billno','$remarks','$status','$requestedDate','$requestedBy','$approvedDate','$approvedBy') ";
+      $stmt = mysqli_prepare($con,$sql);
+      mysqli_stmt_execute($stmt);
       $c = $c + 1;
     }
   }

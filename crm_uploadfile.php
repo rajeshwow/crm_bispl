@@ -38,7 +38,7 @@
   Great ! File Uploaded successfully.
 </div>
     <?php endif ?>
-    <div class="row">
+    <div class="row"> 
       <div class="col-lg-6">
         <form action="./crm_datauploadtodb.php" enctype="multipart/form-data" method="post" role="form">
           <div class="form-group">
@@ -49,6 +49,7 @@
              <option value="crm_fortinet">Fortinet</option>
              <option value="crm_dealer">Dealer data</option>
              <option value="funnel">Funnel data</option>
+             <option value="suspense">Suspense data</option>
            </select>
            <br>
            <label for="exampleInputFile">File Upload</label>
