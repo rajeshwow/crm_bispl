@@ -111,6 +111,10 @@ else{
 
                           <script>
 
+$(document).ready(function(){
+    $(".delete_checkbox").hide();
+});
+
                                   $( ".dropdwnMenuBtn" ).click(function() { 
                                     var btnId = $(this).attr('id');
                                     const myArray = btnId.split("-");
