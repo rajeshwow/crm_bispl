@@ -466,7 +466,6 @@ table thead th {
   <script>
   $(document).ready(function(){
     LocalSuspense = localStorage.getItem('suspenseStatus');
-    console.log("hi",LocalSuspense)
     if (LocalSuspense == null ) {
       localStorage.setItem('suspenseStatus',"All")
     }

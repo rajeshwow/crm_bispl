@@ -2,6 +2,7 @@
 <?php
 session_start();
 $selectedyear = $_POST['choosedyear'];
+$offset = $_POST['offsets'];
 $selectedquarter = $_POST['choosedquarter'];
 
 $checkadmin = "SELECT * from crm_login where email= '" . $_SESSION['email'] . "' ";
@@ -20,14 +21,14 @@ if (($product_dat[0]["crm_fortinet"] == 'Yes') and ($product_dat[0]["crm_eps"] =
   if (is_null($selectedquarter)  && is_null($selectedyear)) {
 
    if ($checkadminarr[0]['usertype']== 'Admin') {
-      $sql = "SELECT * FROM `crm_eps`
-     union 
-     SELECT * FROM crm_fortinet  order by expiry_date asc";
+      $sql = "(SELECT * FROM `crm_eps`)
+      union 
+      (SELECT * FROM crm_fortinet)  order by expiry_date asc limit ".$offset." ";
    }
    else{
-      $sql = "SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY) 
+      $sql = "(SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)) 
      union 
-     SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)  order by expiry_date asc";
+     (SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY))  order by expiry_date asc limit ".$offset."";
    }
     
     
@@ -36,14 +37,13 @@ if (($product_dat[0]["crm_fortinet"] == 'Yes') and ($product_dat[0]["crm_eps"] =
   else {
 
     if ($selectedyear == 'All') {
-      $sql = "SELECT * FROM `crm_eps` union 
-     SELECT * FROM crm_fortinet  order by expiry_date asc ";
+      $sql = "(SELECT * FROM `crm_eps`) union 
+     (SELECT * FROM crm_fortinet)  order by expiry_date asc limit ".$offset." ";
     }
     else{
-      $sql = "SELECT * FROM `crm_eps` WHERE `expiry_date` = $selectedyear AND QUARTER(expiry_date) = $selectedquarter
-
+      $sql = "(SELECT * FROM `crm_eps` WHERE `expiry_date` = $selectedyear AND QUARTER(expiry_date) = $selectedquarter)
      union 
-     SELECT * FROM crm_fortinet WHERE `expiry_date` = $selectedyear AND QUARTER(expiry_date) = $selectedquarter order by expiry_date asc ";
+     (SELECT * FROM crm_fortinet WHERE `expiry_date` = $selectedyear AND QUARTER(expiry_date) = $selectedquarter) order by expiry_date asc limit ".$offset."";
     }
     
   }
@@ -51,11 +51,11 @@ if (($product_dat[0]["crm_fortinet"] == 'Yes') and ($product_dat[0]["crm_eps"] =
 
 elseif ($product_dat[0]["crm_fortinet"] == 'Yes')
 {
-    $sql = "SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)  order by expiry_date asc";
+    $sql = "SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)  order by expiry_date asc limit ".$offset."";
 }
 elseif ($product_dat[0]["crm_eps"] == 'Yes')
 {
-    $sql = "SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY) order by expiry_date asc";
+    $sql = "SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY) order by expiry_date asc limit ".$offset."";
 }
 
 $result = mysqli_query($con, $sql);
@@ -70,7 +70,7 @@ $i = 0;
 <?php 
    $stcount = 0;
       if ($counnt!=0) {
-       
+        
        while($i<$counnt){
       
         // $date=date_create($product_data[$i]["expiry_date"]);
@@ -79,6 +79,7 @@ $i = 0;
 ?>
 
 <tr>
+   
    <td><?php echo $i+1 ?></td>
    <td style="overflow-x: visible;">
       <div class="dropdown">
