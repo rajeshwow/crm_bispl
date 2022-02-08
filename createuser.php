@@ -352,9 +352,9 @@
             type:"POST",
             data:$('#create_userform').serialize(),
             success:function(data){
-               alert(data)
-               // $('#create_usermodel').modal('hide');
-               // setInterval('location.reload()', 1000); 
+               
+                $('#create_usermodel').modal('hide');
+                setInterval('location.reload()', 1000); 
             }
          });
          
