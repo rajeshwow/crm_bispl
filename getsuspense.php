@@ -123,5 +123,9 @@ else{
                                             
                                   });
                             
-                           
+                                  $(document).on('click', function (e) {
+                                      if ($(e.target).closest(".dropdwnMenuBtn").length === 0) {
+                                          $(".dropdwnMenu").slideUp();
+                                      }
+                                  });
                           </script>
