@@ -110,7 +110,7 @@ table thead th {
         <button onclick="location.href = './exporttabledata.php';" type="button" id="download" class="btn btns pull-right">Export data <i class="fas fa-file-download btnicons"></i></button>
 
       </li>
-    <?php } ?>
+    <?php } ?> 
   </ul>
 </div>
 </div>

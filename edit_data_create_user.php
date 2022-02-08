@@ -158,7 +158,6 @@ label {
 }
 </style>
 <div class="row">
-   <h2 style="text-align: center;">Create User</h2>
    <div class="col-lg-4">
       <input type="hidden"  name="emailactual" value="<?php echo $userloginemail;?>">
       <div class="form-group">
