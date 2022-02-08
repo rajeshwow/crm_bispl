@@ -119,10 +119,9 @@ while( $rowind = mysqli_fetch_assoc( $resultindore ) ) $inddata[] = $rowind;
     <button class="btn  updatedon"><span updatetimeicon><i class="fas fa-info-circle"></i></span> Last updated on </button>
     <div class="updatedtime">
       <ul style="padding-inline-start: 0px;">
-        <li>
-          <span class="ttlsss"><b>Jaipur</b>: </span><span><?php echo date("d-m-Y H:i:s", strtotime($jprdata[0]["created_on"])); ?></span></li><hr>
-          <li><span class="ttlsss"><b>Indore</b>: </span><span><?php echo date("d-m-Y H:i:s", strtotime($inddata[0]["created_on"])); ?></span></li><hr>
-          <li><span class="ttlsss"><b>Lucknow</b>: </span><span><?php echo date("d-m-Y H:i:s", strtotime($lckdata[0]["created_on"])); ?></span></li><hr>
+          <li><span class="ttlsss"><b>Jaipur</b>: </span><span><?php echo $jprdata[0]["created_on"] ? date("d-m-Y H:i:s", strtotime($jprdata[0]["created_on"]) ) : "-" ?></span></li><hr>
+          <li><span class="ttlsss"><b>Indore</b>: </span><span><?php echo $inddata[0]["created_on"] ?  date("d-m-Y H:i:s", strtotime($inddata[0]["created_on"])) : "-" ?></span></li><hr>
+          <li><span class="ttlsss"><b>Lucknow</b>: </span><span><?php echo $lckdata[0]["created_on"] ?  date("d-m-Y H:i:s", strtotime($lckdata[0]["created_on"])) : "-" ?></span></li><hr>
           <li>If data fluctuating, Please wait for some time <br> and then refresh the tab.<br> At that time uploading may be in progress.</li>
         </ul>
       </div>
