@@ -1,5 +1,4 @@
 <?php include 'config.php'?>
-<?php include 'crm_userauth.php'; ?>
 <?php include 'header.php'?>
 <?php include 'navbar.php'?>
 
