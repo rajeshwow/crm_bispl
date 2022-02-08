@@ -203,12 +203,7 @@ table thead th {
   <div class="outsidetable">
   <table class="table table-fixed table-bordered" id="myTable">
   <?php
-  $sql = "SELECT * FROM suspense ";
-  $result = mysqli_query($con, $sql);
-  while($row2 = mysqli_fetch_assoc($result))
-  $product_data[] = $row2;
-  $counnt = count($product_data);
-  $i = 0;
+  
   
   
   $ueraccessquery = "SELECT * from crm_useraccess where email= '" . $_SESSION['email'] . "' ";
@@ -397,7 +392,7 @@ table thead th {
         cccc++;
       } else {
         rows[i].style.display = "none";
-      }      
+      }       
     }
     console.log ( cccc );
     $(".recordcount").fadeIn().html('Records:' + cccc);
@@ -494,8 +489,7 @@ table thead th {
         var tbodyRowCount = table.tBodies[0].rows.length; // 3
         console.log("dddddddddd",tbodyRowCount);
         document.getElementById('showttlrecord').innerHTML = tbodyRowCount;
-        // document.getElementById('hiddencontainer').value = tbodyRowCount;
-        //   alert(tbodyRowCount);
+        
       },
       complete:function(data){
         // Hide image container

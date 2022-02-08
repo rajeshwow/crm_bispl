@@ -297,7 +297,7 @@ tr:nth-of-type(odd) td:nth-of-type(4) { background-color: white; }*/
          <th >SalesPerson<span class='sorticon'><i class="fas fa-sort"></i></span></th>
        </tr>
      </thead>
-     <tbody>
+     <tbody> 
       <?php 
       while($i<$counnt){
        ?>

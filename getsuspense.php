@@ -1,8 +1,14 @@
+
 <?php include 'crm_userauth.php'; ?>
+
 <?php
 
 session_start();
  $selectedStatus = $_POST['selectedStatus'];
+
+ $ueraccessquery = "SELECT * from crm_useraccess where email= '" . $_SESSION['email'] . "' ";
+ $result2 = mysqli_query($con, $ueraccessquery);
+ while ($row3 = mysqli_fetch_assoc($result2)) $user_access[] = $row3;
 
 if ($selectedStatus == 'All' ) {
     $sql = "SELECT * FROM suspense ";
@@ -28,10 +34,10 @@ else{
       <ul class="list-inline">
       <li>
       <div class="dropdown">
-      <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown" style="padding: 0px 5px;font-size: 12px;">
-      <span class="acticon"><i class="fas fa-ellipsis-v"></i></span>
+      <button class="btn  dropdown-toggle dropdwnMenuBtn" id="<?php echo Dropdown."-".Btn."-".$i?>" type="button" data-toggle="dropdown" style="padding: 0px 5px;font-size: 12px;">
+      <span class="acticon"><i class="fas fa-ellipsis-v"></i></span></button>
       
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu dropdwnMenu" id="<?php echo Dropdown.$i?>" >
       <?php if ($user_access[0]["suspense_actions"] == 'Yes'): ?>
         <li class="updaterecord" id="<?php echo( $product_data[$i]["chequeno"]) ?>---<?php echo( $product_data[$i]["billno"])?>---<?php  echo( $product_data[$i]["id"]) ?>" ><span class="dropdown-menuicn"><i class="fas fa-pencil-alt"></i></span><span class="dropdown-menutxt">Update</span></li>
         
@@ -102,3 +108,20 @@ else{
                           <td><?php echo 'No Record Found. ' ?></td>
                           </tr>
                           <?php }?>
+
+                          <script>
+
+                                  $( ".dropdwnMenuBtn" ).click(function() { 
+                                    var btnId = $(this).attr('id');
+                                    const myArray = btnId.split("-");
+                                    var Dropid = myArray[0]+myArray[2];
+                                    // alert(Dropid)
+                                    // alert(btnId)  
+                                     
+                                    $('.dropdwnMenu').hide();
+                                    $('#'+Dropid).slideToggle(); 
+                                            
+                                  });
+                            
+                           
+                          </script>
