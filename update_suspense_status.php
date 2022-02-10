@@ -6,10 +6,11 @@ if (isset($_POST['edit_id'])) {
    $data = explode("---", $_POST['edit_id']);
    $chequeno= $data[0];
    $billno = $data[1];
+   $ids = $data[2];
 
 
 
-   $sql = "SELECT * from suspense where chequeno = '$data[0]' and billno = '$data[1]' ";
+   $sql = "SELECT * from suspense where chequeno = '$data[0]' and billno = '$data[1]' and id = '$ids' ";
    $result = mysqli_query($con,$sql);
    while ($row = mysqli_fetch_array($result)) {
       $cheque = $row['chequeno'];
@@ -24,6 +25,7 @@ if (isset($_POST['edit_id'])) {
 
 
 <div class="form-group row">
+<input type="hidden" name="idnumber" value="<?php echo $ids; ?>">
    <div class="col-xs-6">
       <label>Cheque No.</label>
       <input readonly="true"  type="text" class="form-control "  name="chequenumber" id="chequenumber" value="<?php echo $cheque ?>" >
