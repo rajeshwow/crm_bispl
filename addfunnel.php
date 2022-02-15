@@ -125,7 +125,6 @@
 
       $("#state").change(function() {
          var selectedStatus = $(this).val();
-         alert(selectedStatus)
          $.ajax({
          type: "GET",
          headers: {
