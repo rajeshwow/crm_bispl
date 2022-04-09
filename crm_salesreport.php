@@ -32,7 +32,8 @@
 					<form class="form-inline" action="">
 						<div class="form-group" id="yearly" >
 							<select class="form-control" id="seleted_year" >
-								<option value="2021-2022" selected="selected">2021-22</option>
+							    <option value="2022-2023" selected="selected">2022-23</option>
+								<option value="2021-2022">2021-22</option>
 								<option value="2020-2021">2020-21</option>
 								<option value="2019-2020">2019-20</option>
 							</select>
