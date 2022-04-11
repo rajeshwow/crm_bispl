@@ -143,25 +143,9 @@
 			$("#monthly").hide();
 			$("#yearly").fadeToggle();
 		});
-		// $("#select_type").on('change', function() {
-		// 	var selected_type = $("#selected_type").val();
-		// 	$("#yearly").show();
-		// 	if (selected_type == 'quarterly') {
-		// 		$("#quarterly").show();
-		// 		$("#monthly").hide();
-		// 	}
-		// 	else{
-		// 		$("#monthly").show();
-		// 		$("#quarterly").hide();
-		// 	}
-		// });
-		// $("#seleted_year").on('change', function() {
-			
-		// 	$('#months,#quarters').prop('selectedIndex', 0);
-		// 	$('#months,#quarters').toggleClass('animate__animated animate__shakeX animate__repeat-1');
-		// });
 		$("#seleted_year").on('change', function() {
 			// var monthorquarter = $(this).val();
+			$("#loadingss").show();
 			var years = $(this).val();
 			$.ajax({
 				type: "POST",
@@ -179,43 +163,9 @@
 					$("#loadingss").hide();
 				}
 			});
-			// if (monthorquarter == 'Q1'|| monthorquarter == 'Q2' || monthorquarter == 'Q3' || monthorquarter == 'Q4') {
-			// 	alert("Quarter "+monthorquarter);
-
-			// }
-			// else{
-			// 	alert("month "+monthorquarter);
-			// }
-			
-			// if (selected_type == 'quarterly') {
-			// 	$("#quarterly").show();
-			// 	$("#monthly").hide();
-			// }
-			// else{
-			// 	$("#monthly").show();
-			// 	$("#quarterly").hide();
-			// }
 		});
 	});
-	// $(document).ready(function() { 
-		
 
-	// 	$("#start_date, #end_date").on('change', function() {
-	// 		var start_date = $("#start_date").val();
-	// 		var end_date =   $("#end_date").val();
-	// 		$.ajax({
-	// 			type: "POST",
-	// 			url: "get_salesreport.php",
-	// 			data: {
-	// 				start_date: start_date,
-	// 				end_date:  end_date
-	// 			},
-	// 			success: function (data) {
- //                  $("#sales").html(data); 
- //              }
- //          });
-	// 	});
-	// });
 	$(document).ready(function() { 
 		var years = $("#seleted_year").val();
 		$.ajax({
