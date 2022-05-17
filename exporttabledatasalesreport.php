@@ -2,9 +2,9 @@
 <?php
 
  
-echo $sdate = $_POST['startDate'];
-echo $edate = $_POST['endDate'];
-echo $costName = $_POST['costCentre'];
+ $sdate = $_POST['startDate'];
+ $edate = $_POST['endDate'];
+ $costName = $_POST['costCentre'];
 
 $filename = "Sales Report.csv";
 $fp = fopen('php://output', 'w');
