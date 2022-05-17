@@ -2,112 +2,112 @@
 <?php include 'header.php'; ?>
 <?php include 'navbar.php'; ?>
 <style>
-    .ranges {
-        text-align: right;
-    }
+	.ranges {
+		text-align: right;
+	}
 
-    #advbutton {
-        /* border: 1px solid white; */
-        padding: 5px 20px;
-        /* background-color: lightgray; */
-        display: inline-block;
-        cursor: pointer;
-        box-shadow: 0px 0px 20px 4px rgb(128 121 128 / 58%);
-        color: white;
-        background: linear-gradient(138.77deg, #0a1157 21.17%, #0a1157 21.18%, #1d51a8 94.74%);
-        border-radius: 5px;
-    }
+	#advbutton {
+		/* border: 1px solid white; */
+		padding: 5px 20px;
+		/* background-color: lightgray; */
+		display: inline-block;
+		cursor: pointer;
+		box-shadow: 0px 0px 20px 4px rgb(128 121 128 / 58%);
+		color: white;
+		background: linear-gradient(138.77deg, #0a1157 21.17%, #0a1157 21.18%, #1d51a8 94.74%);
+		border-radius: 5px;
+	}
 
-    .button-container {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-    }
+	.button-container {
+		display: flex;
+		align-items: center;
+		justify-content: right;
+	}
 
-    .btn-items {
-        margin: 10px;
-    }
+	.btn-items {
+		margin: 10px;
+	}
 </style>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+	<div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Modal Header</h4>
+			</div>
+			<div class="modal-body">
 
-                <form action="/action_page.php">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label>Cost Centre:</label>
-                                    <div id="cost_center_div">
+				<form action="/action_page.php">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Cost Centre:</label>
+									<div id="cost_center_div">
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="usr"><small>Start Date</small>:</label><br>
-                                    <input type="date" value="<?php echo date("Y-m-d", strtotime('-30 days')); ?>" class="form-control" name="start_date" id="start_date">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="usr"><small>End Date</small>:</label><br>
-                                    <input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="end_date" id="end_date">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <button type="button" id="exportSalesReport" class="btn btn-default">Export</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="usr"><small>Start Date</small>:</label><br>
+									<input type="date" value="<?php echo date("Y-m-d", strtotime('-30 days')); ?>" class="form-control" name="start_date" id="start_date">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="usr"><small>End Date</small>:</label><br>
+									<input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="end_date" id="end_date">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<button type="button" id="exportSalesReport" class="btn btn-default">Export</button>
+							</div>
+						</div>
+					</div>
+				</form>
 
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
 
-    </div>
+	</div>
 </div>
 <div class="container-fluid">
-    <div class="right-part">
-        <div class="rightpartitle">
-            <span class="acttitle">sales Report</span>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="button-container">
-                    <div class="btn-items">
-                        <button type="button" class="btn btns " data-toggle="modal" data-target="#myModal">Export Data<i class="fas fa-file-download btnicons"></i></button>
-                    </div>
-                    <div class="btn-items">
-                        <form class="form-inline" action="">
-                            <div class="form-group" id="yearly">
-                                <select class="form-control" id="seleted_year">
-                                    <option value="2022-2023" selected="selected">2022-23</option>
-                                    <option value="2021-2022">2021-22</option>
-                                    <option value="2020-2021">2020-21</option>
-                                    <option value="2019-2020">2019-20</option>
-                                </select>
-                            </div>
-                            <!-- <div class="form-group" id="quarterly" >
+	<div class="right-part">
+		<div class="rightpartitle">
+			<span class="acttitle">sales Report</span>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="button-container">
+					<div class="btn-items">
+						<button type="button" class="btn btns " data-toggle="modal" data-target="#myModal">Export Data<i class="fas fa-file-download btnicons"></i></button>
+					</div>
+					<div class="btn-items">
+						<form class="form-inline" action="">
+							<div class="form-group" id="yearly">
+								<select class="form-control" id="seleted_year">
+									<option value="2022-2023" selected="selected">2022-23</option>
+									<option value="2021-2022">2021-22</option>
+									<option value="2020-2021">2020-21</option>
+									<option value="2019-2020">2019-20</option>
+								</select>
+							</div>
+							<!-- <div class="form-group" id="quarterly" >
 							<select class="form-control datecheck" id="quarters" >
 								<option selected="selected" disabled="true">Select Quarter</option>
 								<option value="Q1">Quarter 1</option>
@@ -140,7 +140,7 @@
 								<option value="monthly">Monthly</option>
 							</select>
 						</div> -->
-                            <!-- <div class="form-group" style="text-align: left;">
+							<!-- <div class="form-group" style="text-align: left;">
 							<label for="usr"><small>Start Date</small>:</label><br>
 							<input type="date" value="<?php echo date("Y-m-d", strtotime('-30 days')); ?>"  class="form-control input-sm" name="start_date" id="start_date">
 						</div>
@@ -148,210 +148,205 @@
 							<label for="usr"><small>End Date</small>:</label><br>
 							<input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control input-sm" name="end_date" id="end_date">
 						</div> -->
-                        </form>
-                    </div>
-                    <div class="btn-items">
-                        <span id="advbutton"><i class="fas fa-filter"></i></span>
-                    </div>
-                </div>
+						</form>
+					</div>
+					<div class="btn-items">
+						<span id="advbutton"><i class="fas fa-filter"></i></span>
+					</div>
+				</div>
 
-            </div>
-        </div>
-        <br>
-        <?php
-        $ueraccessquery = "SELECT * from crm_useraccess where email= '" . $_SESSION['email'] . "' ";
-        $result2 = mysqli_query($con, $ueraccessquery);
-        while ($row3 = mysqli_fetch_assoc($result2))
-            $user_access[] = $row3;
+			</div>
+		</div>
+		<br>
+		<?php
+		$ueraccessquery = "SELECT * from crm_useraccess where email= '" . $_SESSION['email'] . "' ";
+		$result2 = mysqli_query($con, $ueraccessquery);
+		while ($row3 = mysqli_fetch_assoc($result2))
+			$user_access[] = $row3;
 
-        $sql = "SELECT email, password,usertype FROM crm_login where email = '" . $_SESSION['email'] . "' ";
-        $result = mysqli_query($con, $sql) or die("Error: " . mysqli_error($con));
-        while ($rw = mysqli_fetch_assoc($result))
-            $row[] = $rw;
-        ?>
-        <div class="row">
-            <div class="col-lg-12">
-                <?php
-                if ($row[0]['usertype'] == 'Admin' || $user_access[0]['salesreport'] == 'Yes') { ?>
-                    <div id="sales">
-                        <div id="loadingss">
+		$sql = "SELECT email, password,usertype FROM crm_login where email = '" . $_SESSION['email'] . "' ";
+		$result = mysqli_query($con, $sql) or die("Error: " . mysqli_error($con));
+		while ($rw = mysqli_fetch_assoc($result))
+			$row[] = $rw;
+		?>
+		<div class="row">
+			<div class="col-lg-12">
+				<?php
+				if ($row[0]['usertype'] == 'Admin' || $user_access[0]['salesreport'] == 'Yes') { ?>
+					<div id="sales">
+						<div id="loadingss">
 
-                            <h4>Loading...</h4>
-                        </div>
-                    </div>
-                <?php    } else { ?>
+							<h4>Loading...</h4>
+						</div>
+					</div>
+				<?php    } else { ?>
 
-                    <div class="alert alert-danger">
-                        <strong>Unauthorised Access !</strong> Uh hoo..You don't have access to view this page. Contact to Admin.
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
+					<div class="alert alert-danger">
+						<strong>Unauthorised Access !</strong> Uh hoo..You don't have access to view this page. Contact to Admin.
+					</div>
+				<?php } ?>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
 
 
 
-    $(document).ready(function() {
-        // $("#quarterly,#monthly,#select_type,#yearly").hide();
-        $("#exportSalesReport").click(function() {
-            var stDate = $("#start_date").val();
-            var endDate = $("#end_date").val();
-            var cost_centre = $("#cost_centre").val();
-            console.log("ddddddddddd", stDate, endDate, cost_centre)
-            $.ajax({
-                type: "POST",
-                url: "exporttabledatasalesreport.php",
-                beforeSend: function() {
-                    $("#loadingss").show();
-                },
-                data: {startDate: stDate,
-                        endDate: endDate,
-                        costCentre: cost_centre
-                },
-                success: function(data) {
-                    // $("#sales").html(data);
+	$(document).ready(function() {
+		$("#exportSalesReport").click(function() {
+			var stDate = $("#start_date").val();
+			var endDate = $("#end_date").val();
+			var cost_centre = $("#cost_centre").val();
+
+			$.ajax({
+				type: "POST",
+				url: "exporttabledatasalesreport.php",
+				
+				data: {
+					startDate: stDate,
+					endDate: endDate,
+					costCentre: cost_centre,
+				},
+				success: function(data) {
+					// $("#sales").html(data);
 					$('#myModal').modal('hide');
-                    alert(data)
-                },
-                complete: function(data) {
-                    // $("#loadingss").hide();
-                }
-            });
-        });
+					alert(data);
+				},
+				complete: function(data) {
+					// $("#loadingss").hide();
+				}
+			});
+		});
+	});
 
 
+	$(document).ready(function() {
+		// $("#quarterly,#monthly,#select_type,#yearly").hide();
+		$("#advbutton").click(function() {
+			$("#select_type").fadeToggle();
+			$("#quarterly").hide();
+			$("#monthly").hide();
+			$("#yearly").fadeToggle();
+		});
+		// $("#select_type").on('change', function() {
+		// 	var selected_type = $("#selected_type").val();
+		// 	$("#yearly").show();
+		// 	if (selected_type == 'quarterly') {
+		// 		$("#quarterly").show();
+		// 		$("#monthly").hide();
+		// 	}
+		// 	else{
+		// 		$("#monthly").show();
+		// 		$("#quarterly").hide();
+		// 	}
+		// });
+		// $("#seleted_year").on('change', function() {
 
-    });
+		// 	$('#months,#quarters').prop('selectedIndex', 0);
+		// 	$('#months,#quarters').toggleClass('animate__animated animate__shakeX animate__repeat-1');
+		// });
+		$("#seleted_year").on('change', function() {
+			// var monthorquarter = $(this).val();
+			var years = $(this).val();
+			$.ajax({
+				type: "POST",
+				url: "get_salesreport.php",
+				beforeSend: function() {
+					$("#loadingss").show();
+				},
+				data: {
+					yr: years,
+				},
+				success: function(data) {
+					$("#sales").html(data);
+				},
+				complete: function(data) {
+					$("#loadingss").hide();
+				}
+			});
+			// if (monthorquarter == 'Q1'|| monthorquarter == 'Q2' || monthorquarter == 'Q3' || monthorquarter == 'Q4') {
+			// 	alert("Quarter "+monthorquarter);
 
+			// }
+			// else{
+			// 	alert("month "+monthorquarter);
+			// }
 
-    $(document).ready(function() {
-        // $("#quarterly,#monthly,#select_type,#yearly").hide();
-        $("#advbutton").click(function() {
-            $("#select_type").fadeToggle();
-            $("#quarterly").hide();
-            $("#monthly").hide();
-            $("#yearly").fadeToggle();
-        });
-        // $("#select_type").on('change', function() {
-        // 	var selected_type = $("#selected_type").val();
-        // 	$("#yearly").show();
-        // 	if (selected_type == 'quarterly') {
-        // 		$("#quarterly").show();
-        // 		$("#monthly").hide();
-        // 	}
-        // 	else{
-        // 		$("#monthly").show();
-        // 		$("#quarterly").hide();
-        // 	}
-        // });
-        // $("#seleted_year").on('change', function() {
-
-        // 	$('#months,#quarters').prop('selectedIndex', 0);
-        // 	$('#months,#quarters').toggleClass('animate__animated animate__shakeX animate__repeat-1');
-        // });
-        $("#seleted_year").on('change', function() {
-            // var monthorquarter = $(this).val();
-            var years = $(this).val();
-            $.ajax({
-                type: "POST",
-                url: "get_salesreport.php",
-                beforeSend: function() {
-                    $("#loadingss").show();
-                },
-                data: {
-                    yr: years,
-                },
-                success: function(data) {
-                    $("#sales").html(data);
-                },
-                complete: function(data) {
-                    $("#loadingss").hide();
-                }
-            });
-            // if (monthorquarter == 'Q1'|| monthorquarter == 'Q2' || monthorquarter == 'Q3' || monthorquarter == 'Q4') {
-            // 	alert("Quarter "+monthorquarter);
-
-            // }
-            // else{
-            // 	alert("month "+monthorquarter);
-            // }
-
-            // if (selected_type == 'quarterly') {
-            // 	$("#quarterly").show();
-            // 	$("#monthly").hide();
-            // }
-            // else{
-            // 	$("#monthly").show();
-            // 	$("#quarterly").hide();
-            // }
-        });
-    });
-    // $(document).ready(function() { 
+			// if (selected_type == 'quarterly') {
+			// 	$("#quarterly").show();
+			// 	$("#monthly").hide();
+			// }
+			// else{
+			// 	$("#monthly").show();
+			// 	$("#quarterly").hide();
+			// }
+		});
+	});
+	// $(document).ready(function() { 
 
 
-    // 	$("#start_date, #end_date").on('change', function() {
-    // 		var start_date = $("#start_date").val();
-    // 		var end_date =   $("#end_date").val();
-    // 		$.ajax({
-    // 			type: "POST",
-    // 			url: "get_salesreport.php",
-    // 			data: {
-    // 				start_date: start_date,
-    // 				end_date:  end_date
-    // 			},
-    // 			success: function (data) {
-    //                  $("#sales").html(data); 
-    //              }
-    //          });
-    // 	});
-    // });
-    $(document).ready(function() {
-        var years = $("#seleted_year").val();
-        $.ajax({
-            type: "POST",
-            url: "get_salesreport.php",
-            beforeSend: function() {
-                $("#loadingss").show();
-            },
-            data: {
-                yr: years,
-            },
-            success: function(data) {
-                $("#sales").html(data);
-            },
-            complete: function(data) {
-                $("#loadingss").hide();
-            }
-        });
-    });
+	// 	$("#start_date, #end_date").on('change', function() {
+	// 		var start_date = $("#start_date").val();
+	// 		var end_date =   $("#end_date").val();
+	// 		$.ajax({
+	// 			type: "POST",
+	// 			url: "get_salesreport.php",
+	// 			data: {
+	// 				start_date: start_date,
+	// 				end_date:  end_date
+	// 			},
+	// 			success: function (data) {
+	//                  $("#sales").html(data); 
+	//              }
+	//          });
+	// 	});
+	// });
+	$(document).ready(function() {
+		var years = $("#seleted_year").val();
+		$.ajax({
+			type: "POST",
+			url: "get_salesreport.php",
+			beforeSend: function() {
+				$("#loadingss").show();
+			},
+			data: {
+				yr: years,
+			},
+			success: function(data) {
+				$("#sales").html(data);
+			},
+			complete: function(data) {
+				$("#loadingss").hide();
+			}
+		});
+	});
 
-    $(document).ready(function() {
-        $.ajax({
-            type: "get",
-            url: "get_costcentre.php",
-            success: function(data) {
-                $("#cost_center_div").html(data);
-                // alert(data)
-            },
-        });
-    });
+	$(document).ready(function() {
+		$.ajax({
+			type: "get",
+			url: "get_costcentre.php",
+			success: function(data) {
+				$("#cost_center_div").html(data);
+				// alert(data)
+			},
+		});
+	});
 </script>
 
 <?php include 'footer.php'; ?>
