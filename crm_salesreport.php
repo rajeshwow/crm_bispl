@@ -40,7 +40,7 @@
 			</div>
 			<div class="modal-body">
 
-				<form action="/action_page.php">
+				<form action="./exporttabledatasalesreport.php" method="POST">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-lg-12">
@@ -56,7 +56,7 @@
 							<div class="col-lg-12">
 								<div class="form-group">
 									<label for="usr"><small>Start Date</small>:</label><br>
-									<input type="date" value="<?php echo date("Y-m-d", strtotime('-30 days')); ?>" class="form-control" name="start_date" id="start_date">
+									<input type="date" value="<?php echo date("Y-m-d", strtotime('-30 days')); ?>" class="form-control" name="startDate" id="startDate">
 								</div>
 							</div>
 						</div>
@@ -64,13 +64,13 @@
 							<div class="col-lg-12">
 								<div class="form-group">
 									<label for="usr"><small>End Date</small>:</label><br>
-									<input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="end_date" id="end_date">
+									<input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="endDate" id="endDate">
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
-								<button type="button" id="exportSalesReport" class="btn btn-default">Export</button>
+								<button type="submit" id="exportSalesReportsss" class="btn btn-default">Export</button>
 							</div>
 						</div>
 					</div>
