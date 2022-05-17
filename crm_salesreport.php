@@ -221,12 +221,9 @@
                 beforeSend: function() {
                     $("#loadingss").show();
                 },
-                data: {
-                    data: {
-                        startDate: stDate,
+                data: {startDate: stDate,
                         endDate: endDate,
                         costCentre: cost_centre
-                    },
                 },
                 success: function(data) {
                     // $("#sales").html(data);
