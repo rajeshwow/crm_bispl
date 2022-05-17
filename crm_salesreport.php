@@ -214,26 +214,28 @@
 			var endDate = $("#end_date").val();
 			var cost_centre = $("#cost_centre").val();
 
-			$.ajax({
-				type: "POST",
-				url: "exporttabledatasalesreport.php",
+			location.href = './exporttabledatasalesreport.php?startDate'+stDate+'endDate'+endDate+'costCentre'+cost_centre;
+
+			// $.ajax({
+			// 	type: "POST",
+			// 	url: "exporttabledatasalesreport.php",
 				
-				data: {
-					startDate: stDate,
-					endDate: endDate,
-					costCentre: cost_centre,
-				},
-				success: function(data) {
-					// $("#sales").html(data);
-					$('#myModal').modal('hide');
-					alert(data);
-				},
-				complete: function(data) {
-					// $("#loadingss").hide();
-				}
-			});
-		});
-	});
+			// 	data: {
+			// 		startDate: stDate,
+			// 		endDate: endDate,
+			// 		costCentre: cost_centre,
+			// 	},
+			// 	success: function(data) {
+			// 		// $("#sales").html(data);
+			// 		$('#myModal').modal('hide');
+			// 		alert(data);
+			// 	},
+			// 	complete: function(data) {
+			// 		// $("#loadingss").hide();
+			// 	}
+			// });
+		})
+	})
 
 
 	$(document).ready(function() {
