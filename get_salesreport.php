@@ -171,7 +171,7 @@ $i = 0;
 	{
 
 		$arr_racc_panel_getcategory[] = $racc_panel_getcategory;
-	}
+	} 
 
             // -----------------------------------------------------------
 	$first_month_of_quarter = sprintf("%02d", ($total_monthss +1));
