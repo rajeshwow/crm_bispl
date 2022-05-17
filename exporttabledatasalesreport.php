@@ -35,7 +35,7 @@ while($row = mysqli_fetch_row($result)) {
 	fputcsv($fp, $row);
 }
 // header("Refresh:1; url=./crm_salesreport.php");
-header("location: ./crm_salesreport.php");
+// header("location: ./crm_salesreport.php");
 
 exit;
 
