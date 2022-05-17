@@ -56,7 +56,7 @@
            <input type="file" name="file" id="file">
            <p class="help-block">Only CSV File Import.</p>
          </div>
-         <button type="submit" class="btn btn-default" name="submit" value="submit">Upload</button>
+         <button type="submit" class="btn btns" name="submit" value="submit">Upload</button>
        </form>   
      </div>
    </div>
