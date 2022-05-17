@@ -4,7 +4,7 @@
  
 echo $sdate = $_POST['startDate'];
 echo $edate = $_POST['endDate'];
-echo $costName = $_POST['cost_centre'];
+echo $costName = $_POST['costCentre'];
 
 $filename = "Sales Report.csv";
 $fp = fopen('php://output', 'w');

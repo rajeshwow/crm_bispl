@@ -227,6 +227,7 @@
                 },
                 success: function(data) {
                     // $("#sales").html(data);
+					$('#myModal').modal('hide');
                     alert(data)
                 },
                 complete: function(data) {
