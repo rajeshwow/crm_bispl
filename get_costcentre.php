@@ -15,7 +15,7 @@ $count = count($costCentress)
 ?>
 
 
-<select class="form-control" id="cost_centre">
+<select class="form-control" id="cost_centre" name="cost_centre">
     <?php
     for ($i = 0; $i < $count; $i++) {
         if ($costCentress[$i]['costcentre'] !== 'Array') { ?>

@@ -4,12 +4,12 @@
  
  $sdate = $_POST['startDate'];
  $edate = $_POST['endDate'];
- $costName = $_POST['costCentre'];
+ $costName = $_POST['cost_centre'];
 
 $filename = "Sales Report.csv";
 $fp = fopen('php://output', 'w');
 
-$header = array("costcentre", "type", "qty", "amount");	
+$header = array("Cost centre", "Type", "Qty", "Amount");	
 
 header('Content-type: application/csv');
 header('Content-Disposition: attachment; filename='.$filename);
