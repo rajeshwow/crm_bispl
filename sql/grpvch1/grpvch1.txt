@@ -1,9 +1,0 @@
-;;The Report "Group Vouchers" displays vouchers for the current month only
-;;even though we specify the whole year.
-;;As a result, the following TDL code is required
-;;
-;;To be used with grpvch1.xml file
-[#Report: Group Vouchers]
-  Set: SVFROMDATE: ##SVFROMDATE
-  Set: SVTODATE: ##SVTODATE
-

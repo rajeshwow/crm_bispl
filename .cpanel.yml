@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/lha78u13omzr/public_html/crm
-    - /bin/cp * $DEPLOYPATH
