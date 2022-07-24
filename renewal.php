@@ -548,6 +548,7 @@ tr:nth-of-type(odd) td:nth-of-type(5) { background-color: white; }*/
                      <div class="form-group">
                         <select class="form-control selectwidth" name="table_name" id="table_name">
                            <option disabled="true" selected="true">Select Table</option>
+                           <option value="all">All</option>
                            <option value="crm_eps">EPS</option>
                            <option value="crm_fortinet">Fortinet</option>
                         </select>
