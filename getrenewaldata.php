@@ -31,15 +31,10 @@ if (($product_dat[0]["crm_fortinet"] == 'Yes') and ($product_dat[0]["crm_eps"] =
          }
       } else {
 
-         if ($tableName == 'all') {
             $sql = "(SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)) 
             union 
             (SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY))  order by expiry_date asc limit " . $offset . "";
-         } else if ($tableName == 'crm_fortinet') {
-            $sql = "(SELECT * FROM crm_fortinet where expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY))  order by expiry_date asc limit " . $offset . "";
-         } else {
-            $sql = "(SELECT * FROM `crm_eps` WHERE expiry_date <= CURDATE() or  expiry_date between CURDATE() AND DATE_ADD(curdate(), INTERVAL 90 DAY)) ";
-         }
+          
       }
    } else {
       if ($selectedyear == 'All') {
