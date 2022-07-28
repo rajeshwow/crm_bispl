@@ -1,24 +1,24 @@
 <?php include 'crm_userauth.php'; ?>
 <?php
 session_start();
-$selectedyear = $_POST['choosedyear'];
+$selectedyear = $_POST['choosedyear'] ? $_POST['choosedyear'] : 'noval';
 $offset = $_POST['offsets'];
-$selectedquarter = $_POST['choosedquarter'];
-$tableName = $_POST['tableName'];
+$selectedquarter = $_POST['choosedquarter'] ? $_POST['choosedquarter']: 'noval';
+$tableName = $_POST['tableName'] ? $_POST['tableName'] : 'all';
 
 $checkadmin = "SELECT * from crm_login where email= '" . $_SESSION['email'] . "' ";
 $checkadmin_result = mysqli_query($con, $checkadmin);
 while ($checkadmin_result_row = mysqli_fetch_assoc($checkadmin_result)) $checkadminarr[] = $checkadmin_result_row;
 
 
-
+// echo "<script>alert('Debug Objects: " . $selectedyear . "' );</script>";
 
 $ueraccessquery = "SELECT * from crm_useraccess where email= '" . $_SESSION['email'] . "' ";
 $result2 = mysqli_query($con, $ueraccessquery);
 while ($row3 = mysqli_fetch_assoc($result2)) $product_dat[] = $row3;
 
 if (($product_dat[0]["crm_fortinet"] == 'Yes') and ($product_dat[0]["crm_eps"] == 'Yes')) {
-   if (is_null($selectedquarter)  && is_null($selectedyear)) {
+   if (($selectedquarter == 'noval' || $selectedquarter == '')  && ($selectedyear == 'noval' || $selectedyear == '')) {
       if ($checkadminarr[0]['usertype'] == 'Admin') {
          if ($tableName == 'all') {
             $sql = "(SELECT * FROM `crm_eps`)

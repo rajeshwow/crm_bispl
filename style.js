@@ -15,9 +15,9 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $("#advsearch").submit(function (e) {
-    var selectedyear = $("#yearss").val();
-    var selectedquarter = $("#quarter").val();
-    var tableName = $("#table_name").val();
+    var selectedyear = $("#yearss").val() ? $("#yearss").val() : 'noval';
+    var selectedquarter = $("#quarter").val() ? $("#quarter").val() : 'noval';
+    var tableName = $("#table_name").val() ? $("#table_name").val() : 'all';
     console.log("ddddddddddddd",selectedyear,selectedquarter,tableName)
     e.preventDefault();
     renewalOffset = localStorage.getItem('renewalOffset');
