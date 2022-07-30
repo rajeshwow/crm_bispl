@@ -537,7 +537,7 @@ tr:nth-of-type(odd) td:nth-of-type(5) { background-color: white; }*/
                </ul>
             </div>
          </div>
-         <?php if (isset($_SESSION['email']) && ($_SESSION['usertype'] == 'Admin')) {  ?>
+         
             <div class="row">
                <div class="col-lg-3">
                   <button type="button" id="advbutton" class="btn btns">Show Filtered Data</button>
@@ -553,6 +553,7 @@ tr:nth-of-type(odd) td:nth-of-type(5) { background-color: white; }*/
                            <option value="crm_fortinet">Fortinet</option>
                         </select>
                      </div>
+                     <?php if (isset($_SESSION['email']) && ($_SESSION['usertype'] == 'Admin')) {  ?>
                      <div class="form-group">
                         <select class="form-control selectwidth" name="yearss" id="yearss">
                            <option disabled="true" selected="true">Select Year</option>
@@ -575,12 +576,13 @@ tr:nth-of-type(odd) td:nth-of-type(5) { background-color: white; }*/
                            <option value="4">Quarter 4</option>
                         </select>
                      </div>
+                     <?php }  ?>
                      <button type="submit" id="filterrenewaltable" class="btn btn-default">Submit</button>
                      <button type="button" id="clear" class="btn btn-warning">Clear</button>
                   </form>
                </div>
             </div>
-         <?php }  ?>
+         
          <br>
          <div class="row">
             <div class="col-lg-12">
