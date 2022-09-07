@@ -132,7 +132,6 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
                         $session_email = $_SESSION['email'];
                         $url = $filepath . '/api/getsupport.php?email=' . $session_email;
 
-
                         $client = curl_init($url);
                         curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
                         $response = curl_exec($client);
