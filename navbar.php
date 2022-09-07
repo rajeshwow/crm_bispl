@@ -165,7 +165,7 @@ while($row3 = mysqli_fetch_assoc($result2))
   <a href="./Enduser.php"><span data-toggle="tooltip" data-placement="right" title="End Users"><i class="fas iconss fa-users"></i></span><span class="linktext">End User</span></a>
 
   <?php if ($product_dat[0]["supportpage"] == 'Yes') {?>
-    <a href="#"><span data-toggle="tooltip" data-placement="right" title="Support"><i class="fas iconss fa-headset"></i></span><span class="linktext">Support</span></a>
+    <a href="support.php"><span data-toggle="tooltip" data-placement="right" title="Support"><i class="fas iconss fa-headset"></i></span><span class="linktext">Support</span></a>
   <?php } ?>
 
   <?php if ($product_dat[0]["createuserpage"] == 'Yes') {?>
