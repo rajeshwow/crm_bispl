@@ -17,7 +17,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
     <script>
         swal({
             title: "<?php echo $_SESSION['status'] ?>",
-            text: "Dealer has been added!",
+            text: "Support has been added!",
             icon: "<?php echo $_SESSION['status_code'] ?>",
             button: "Ok",
         });
@@ -55,7 +55,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
 
     th:nth-child(4),
     td:nth-child(4) {
-        left: 198px;
+        left: 155px;
 
     }
 
@@ -106,17 +106,42 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
                     </ul>
                 </div>
             </div>
+            <!-- <div class="col-lg-6">
+
+                <ul class="list-inline" style="text-align: right;">
+                    <li>
+                        <select class="form-control" id="offsets">
+                            <option disabled value="">No of Rows.</option>
+                            <option value="500000">All</option>
+                            <option selected="true" value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                        </select>
+                    </li>
+                    <li><button onclick="location.href = './addsupport.php';" type="button" id="addrecord" class="btn btns pull-left">Add Record <i class="fas fa-user-plus btnicons"></i></button></li>
+
+                </ul>
+            </div> -->
             <div class="col-lg-6">
                 <ul class="list-inline" style="text-align: right;">
-                    <li><button onclick="location.href = './addsupport.php';" type="button" id="addrecord" class="btn btns pull-left">Add Record <i class="fas fa-user-plus btnicons"></i></button></li>
-                    <!-- <?php 
-                    if (isset($_SESSION['email']) && ($_SESSION['usertype'] == 'Admin')) {
-                    ?>
-                        <li><button type="button" id="bulkdelete" class="btn btns pull-left">Bulk Delete <i class="fas btnicons fa-check-double"></i></button></li>
-                        <li>
-                            <button onclick="location.href = './exporttabledata.php';" type="button" id="download" class="btn btns pull-right">Export data <i class="fas fa-file-download btnicons"></i></button>
-                        </li>
-                    <?php } ?> -->
+
+                    <li>
+                        <!-- <div class="input-group"> -->
+                        <select class="form-control" id="offsets">
+                            <option disabled value="">No of Rows.</option>
+                            <option value="500000">All</option>
+                            <option selected="true" value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                        </select>
+                        <!-- </div> -->
+                    </li>
+                    <li><button onclick="location.href = './addsupport.php';" type="button" id="addrecord" class="btn btns ">Add Record <i class="fas fa-user-plus btnicons"></i></button></li>
+
                 </ul>
             </div>
         </div>
@@ -129,8 +154,9 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
                 <div class="outsidetable">
                     <table class="table table-fixed table-bordered" id="myTable">
                         <?php
+                        $flimit = 20;
                         $session_email = $_SESSION['email'];
-                        $url = $filepath . '/api/getsupport.php?email=' . $session_email;
+                        $url = $filepath . '/api/getsupport.php?email=' . $session_email . '&offsets='.$_COOKIE['supportOffset'];
 
                         $client = curl_init($url);
                         curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
@@ -188,7 +214,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
                                     </td>
 
                                     <td><?php echo $i + 1 ?></td>
-                                    <td><?php echo ($product_data[$i]["date"]) ?></td>
+                                    <td><?php echo $product_data[$i]["date"] !== '0000-00-00 00:00:00.000000' ? date("Y-m-d", strtotime($product_data[$i]["date"])) : '-' ?></td>
                                     <td class="lasst"><?php echo ($product_data[$i]["serialno"]) ?></td>
                                     <td><?php echo $product_data[$i]['customer'] ?></td>
                                     <td><?php echo ($product_data[$i]["contactPerson"]) ?></td>
@@ -201,13 +227,13 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
                                     <td><?php echo ($product_data[$i]["callDetails"]) ?></td>
                                     <td><?php echo $product_data[$i]['ref'] ?></td>
                                     <td><?php echo ($product_data[$i]["remarks"]) ?></td>
-                                    <td><?php echo ($product_data[$i]["fgt"]) ?></td>
+                                    <td><?php echo $product_data[$i]["fgt"] !== '0000-00-00 00:00:00.000000' ? date("Y-m-d", strtotime($product_data[$i]["fgt"])) : '-' ?></td>
                                     <td><?php echo ($product_data[$i]["av"]) ?></td>
                                     <td><?php echo $product_data[$i]['users'] ?></td>
-                                    <td><?php echo $product_data[$i]['expiry'] ?></td>
-                                    <td><?php echo $product_data[$i]['createdAt'] ?></td>
+                                    <td><?php echo $product_data[$i]["expiry"] !== '0000-00-00 00:00:00.000000' ? date("Y-m-d", strtotime($product_data[$i]["expiry"])) : '-' ?></td>
+                                    <td><?php echo $product_data[$i]["createdAt"] !== '0000-00-00 00:00:00.000000' ? date("Y-m-d", strtotime($product_data[$i]["createdAt"])) : '-' ?></td>
                                     <td><?php echo $product_data[$i]['createdBy'] ?></td>
-                                    <td><?php echo $product_data[$i]['updatedAt'] ?></td>
+                                    <td><?php echo $product_data[$i]["updatedAt"] !== '0000-00-00 00:00:00.000000' ? date("Y-m-d", strtotime($product_data[$i]["updatedAt"])) : '-' ?></td>
                                     <td><?php echo $product_data[$i]['updatedBy'] ?></td>
                                 <?php
                                 $i++;
@@ -238,6 +264,34 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
             $("#advsearch").slideToggle();
         });
     });
+
+    $(document).ready(function() {
+        function getCook(name) {
+            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match) return match[2];
+        }
+            supportOffset = getCook('supportOffset');
+          if (!supportOffset) {
+             document.cookie = 'supportOffset=20';
+          }
+          $("select#offsets").val(getCook('supportOffset'));
+
+        // alert(getCook('supportOffset'))
+    });
+
+    $(document).ready(function() {
+        $("#offsets").change(function() {
+            supportOffset = $(this).val();
+            document.cookie = "supportOffset="+supportOffset;
+            window.location.reload();
+            return false;
+        });
+
+    });
+
+
+
+
     var cccc = 0;
 
     function filterTable(event) {
@@ -343,7 +397,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] != '') { ?>
         $('.outsidetable').on('scroll', function() {
             var p = $("th:eq(2)").position();
             console.log(p.left);
-            if (p.left > 160) {
+            if (p.left > 140) {
                 $("th:eq(3),th:eq(2),th:eq(1)").css("background-color", "#567AED");
                 $(".lasst").addClass("shadow");
             } else {

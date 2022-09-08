@@ -2,8 +2,10 @@
 
     include '../config.php';
     $email = $_GET['email'];
+    $offsets = $_GET['offsets'];
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
+
     
     
     $sql = "SELECT email, password,usertype FROM crm_login where email ='" . $email . "' ";
@@ -27,11 +29,11 @@
     
     if ($row[0]['usertype'] == 'Admin')
     {
-        $sql = "SELECT * FROM crm_support";
+        $sql = "SELECT * FROM crm_support limit $offsets";
     }
     else
     {
-        $sql = "SELECT * FROM crm_support";
+        $sql = "SELECT * FROM crm_support limit $offsets";
         // WHERE city IN ($dealer_arrs)
     }
     
