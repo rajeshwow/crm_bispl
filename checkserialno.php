@@ -2,9 +2,10 @@
 include "config.php";
 
 $serialno = ($_POST['serialno']);
+$tablename = ($_POST['tablename']);
    
 
-   $query = "select * from crm_eps where serialno='".$serialno."'";
+   $query = "select * from $tablename where serialno='".$serialno."' ";
    $result = mysqli_query($con,$query);
 
    // echo "<script>alert(mysqli_num_rows($result))</script>";
