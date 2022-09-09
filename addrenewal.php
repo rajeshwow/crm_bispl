@@ -56,7 +56,7 @@
       <div class="row">
          <div class="col-lg-12">
             <div class="formbox">
-               <form action="./submitrenewal.php" method="POST" id="createRenewal">
+               <form  method="POST" id="createRenewal">
                   <h3 style="text-align: center;">Please Enter Renewal Details.</h3>
                   <div class="form-group row">
                      <div class="col-xs-6">
@@ -175,7 +175,7 @@
                         <button type="button" name="back" onclick="location.href='./renewal.php';" class="btn btns ">Back</button>
                      </div>
                      <div class="col-xs-6">
-                        <button type="submit" name="submit" class="btn btns ">Submit</button>
+                        <button formaction="./crm_update_createuser.php" type="submit" name="submit" class="btn btns ">Submit</button>
                      </div>
                   </div>
 
