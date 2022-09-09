@@ -990,8 +990,6 @@ table thead th {
          success: function(response){
 
            $('#uname_response').html(response);
-
-
         }
      });
      }

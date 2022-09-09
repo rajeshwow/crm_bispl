@@ -751,13 +751,7 @@
    
    $(document).ready(function (){
       $("#createuser_frm").submit(function(e){
-   
-   
         var username = $("#uname_response").text().trim();
-   
-   
-   
-   
         if ((username === "Taken.") || (username === '') || (username === null) || (username === undefined))
         {
          $("#email").focus();
@@ -767,12 +761,8 @@
          e.preventDefault();
       }
       else {
-   
-   
          $("#createuser_frm").submit();
-   
       }
-   
    });
    });
    

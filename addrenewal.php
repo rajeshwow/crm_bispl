@@ -56,7 +56,7 @@ function getdate() {
       <div class="row">
          <div class="col-lg-12">
             <div class="formbox">
-               <form action="./submitrenewal.php" method="POST">
+               <form action="./submitrenewal.php" method="POST" id="createRenewal">
                	<h3 style="text-align: center;">Please Enter Renewal Details.</h3>
                 <div class="form-group">
                      <input type="text" class="form-control "  name="company" id="company" placeholder="Company Name">
@@ -66,8 +66,11 @@ function getdate() {
                       <input type="text" class="form-control "  name="product_name" id="product_name" placeholder="Product Name">
                     </div>
                     <div class="col-xs-6">
+                    <div class="input-group">
                       <input type="text" required="ture" class="form-control "  name="serialno" id="serialno" placeholder="Serial No ">
+                      <div id="serial_response" class="input-group-addon"></div>
                     </div>
+                     </div>
                   </div>
                  
                   <div class="form-group row">
@@ -183,6 +186,48 @@ function getdate() {
     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="jquery-ui.min.js" type="text/javascript"></script>
 <script type="text/javascript">
+
+$(document).ready(function (){
+      $("#createRenewal").submit(function(e){
+        var username = $("#serial_response").text().trim();
+        if ((username === "Taken.") || (username === '') || (username === null) || (username === undefined))
+        {
+         $("#serialno").focus();
+         $("#serialno").attr('placeholder', 'This Serial no already Taken !');
+         $("#serialno").attr('style', 'border:1px solid red !important');
+         $("#serialno").addClass("animate__animated animate__shakeX animate__repeat-1 ");
+         e.preventDefault();
+      }
+      else {
+         $("#createRenewal").submit();
+      }
+   });
+   });
+
+$(document).ready(function(){
+   $(document).on('keydown', '#serialno', function() {
+
+      var serialno = $(this).val().trim();
+      // alert(serialno);
+      
+     if(serialno != ''){
+        $.ajax({
+         url: 'checkserialno.php',
+         type: 'post',
+         data: {serialno: serialno},
+         success: function(response){
+
+           $('#serial_response').html(response);
+         //   alert(response)
+        }
+     });
+     }
+     else{
+        $("#serial_response").html("");
+     }
+   });
+});
+
 $(document).ready(function(){
 
  $(document).on('keydown', '#company', function() {
