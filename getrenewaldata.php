@@ -125,7 +125,7 @@ if ($counnt != 0) {
                   <?php } ?>
                   <!-- <?php if ($product_dat[0]["quotededit"] == 'Yes') { ?> -->
                   <!-- <?php } ?> -->
-                  <?php if ($product_dat[0]["lostandupgradeedit"] == 'Yes') {
+                  <?php if ($product_dat[0]["lostandupgradeedit"] == 'Yes') { 
                   ?>
                      <li><button type="button" class="btn btns lostandupgrade" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Lost and Upgrade</button></li>
                   <?php } ?>
@@ -141,7 +141,7 @@ if ($counnt != 0) {
             </div>
          </td>
          <td>
-            <button type="button" class="btn  updaterecord" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-pencil-alt"></i></button>
+            <button type="button" class="btn  updaterecord" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-pencil-alt"></i></button>
             <?php if (isset($_SESSION['email']) && ($_SESSION['usertype'] == 'Admin')) { ?>
                <button type="button" class="btn  deleterecord" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-trash-alt"></i></button>
             <?php } ?>
