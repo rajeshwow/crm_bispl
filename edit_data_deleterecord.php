@@ -3,7 +3,7 @@
    
    if (isset($_POST['edit_id'])) {
    
-      $data = explode("-", $_POST['edit_id']);
+      $data = explode("---", $_POST['edit_id']);
    
       $tablename = $data[0];
       $serial = $data[1];

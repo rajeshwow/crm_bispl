@@ -114,28 +114,28 @@ if ($counnt != 0) {
 
                ?>
                <ul class="dropdown-menu">
-                  <li><button type="button" class="btn btns quoted" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Quoted</button></li>
-                  <li><button type="button" class="btn btns hold" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Hold</button></li>
+                  <li><button type="button" class="btn btns quoted" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Quoted</button></li>
+                  <li><button type="button" class="btn btns hold" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Hold</button></li>
                   <?php if ($product_dat[0]["renewedit"] == 'Yes') { ?>
-                     <li><button type="button" class="btn btns renew" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo ($product_data[$i]["serialno"]) ?>">Renew</button></li>
+                     <li><button type="button" class="btn btns renew" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo ($product_data[$i]["serialno"]) ?>">Renew</button></li>
                   <?php } ?>
                   <?php if ($product_dat[0]["upgradeedit"] == 'Yes') {
                   ?>
-                     <li><button type="button" class="btn btns upgrade" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Upgrade</button></li>
+                     <li><button type="button" class="btn btns upgrade" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Upgrade</button></li>
                   <?php } ?>
                   <!-- <?php if ($product_dat[0]["quotededit"] == 'Yes') { ?> -->
                   <!-- <?php } ?> -->
                   <?php if ($product_dat[0]["lostandupgradeedit"] == 'Yes') { 
                   ?>
-                     <li><button type="button" class="btn btns lostandupgrade" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Lost and Upgrade</button></li>
+                     <li><button type="button" class="btn btns lostandupgrade" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Lost and Upgrade</button></li>
                   <?php } ?>
                   <?php if ($product_dat[0]["lostandrenewedit"] == 'Yes') {
                   ?>
-                     <li><button type="button" class="btn btns lostandrenew" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Lost and Renew</button></li>
+                     <li><button type="button" class="btn btns lostandrenew" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Lost and Renew</button></li>
                   <?php } ?>
                   <?php if ($product_dat[0]["dontwanttorenewedit"] == 'Yes') {
                   ?>
-                     <li><button type="button" class="btn btns donotwanttorenew" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>">Don't Want to Renew</button></li>
+                     <li><button type="button" class="btn btns donotwanttorenew" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>">Don't Want to Renew</button></li>
                   <?php } ?>
                </ul>
             </div>
@@ -143,7 +143,7 @@ if ($counnt != 0) {
          <td>
             <button type="button" class="btn  updaterecord" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-pencil-alt"></i></button>
             <?php if (isset($_SESSION['email']) && ($_SESSION['usertype'] == 'Admin')) { ?>
-               <button type="button" class="btn  deleterecord" id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-trash-alt"></i></button>
+               <button type="button" class="btn  deleterecord" id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>"><i class="fas fa-trash-alt"></i></button>
             <?php } ?>
          </td>
          <?php if ($product_dat[0]["product_name_view"] == 'Yes' || ($_SESSION['usertype'] == 'Admin')) { ?>
@@ -152,7 +152,7 @@ if ($counnt != 0) {
          <td>
             <div style="width: 180px;background: lightgoldenrodyellow;">
                <span class="pull-left"> <?php echo ($product_data[$i]["serialno"]) ?></span>
-               <span data-toggle="tooltip" data-placement="right" title="Click to Send Mail !" class="pull-right"><i id="<?php echo ($product_data[$i]["type"]) ?>-<?php echo $product_data[$i]["serialno"] ?>" class="fas fa-envelope-open-text mailicon"></i></span>
+               <span data-toggle="tooltip" data-placement="right" title="Click to Send Mail !" class="pull-right"><i id="<?php echo ($product_data[$i]["type"]) ?>---<?php echo $product_data[$i]["serialno"] ?>" class="fas fa-envelope-open-text mailicon"></i></span>
             </div>
          </td>
          <?php if ($product_dat[0]["remarks_view"] == 'Yes' || ($_SESSION['usertype'] == 'Admin')) { ?>

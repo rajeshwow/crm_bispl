@@ -3,7 +3,7 @@
    
    if (isset($_POST['edit_id'])) {
    
-      $data = explode("-", $_POST['edit_id']);
+      $data = explode("---", $_POST['edit_id']);
       $ids = $data[2];
       $customer = $data[1];
       $company = $data[0];

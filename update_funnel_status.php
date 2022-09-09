@@ -3,7 +3,7 @@ include 'config.php';
 
 if (isset($_POST['edit_id'])) {
 
-   $data = explode("-", $_POST['edit_id']);
+   $data = explode("---", $_POST['edit_id']);
    $company= $data[0];
    $customer = $data[1];
    $ids = $data[2];

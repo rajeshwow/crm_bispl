@@ -314,10 +314,10 @@ tr:nth-of-type(odd) td:nth-of-type(4) { background-color: white; }*/
                     <?php if ($user_access[0]["funnel_actions"] == 'Yes'): ?>
                       <li class="updaterecord" id="<?php  echo( $product_data[$i]["id"]) ?>"><span class="dropdown-menuicn"><i class="fas fa-pencil-alt"></i></span><span class="dropdown-menutxt">Update</span></li>
 
-                      <li class="deleterecord" id="<?php echo( $product_data[$i]["company"]) ?>-<?php echo( $product_data[$i]["customer"])?>-<?php  echo( $product_data[$i]["id"]) ?>"><span class="dropdown-menuicn"><i class="fas fa-trash-alt"></i></span><span class="dropdown-menutxt">Delete</span></li>
+                      <li class="deleterecord" id="<?php echo( $product_data[$i]["company"]) ?>---<?php echo( $product_data[$i]["customer"])?>---<?php  echo( $product_data[$i]["id"]) ?>"><span class="dropdown-menuicn"><i class="fas fa-trash-alt"></i></span><span class="dropdown-menutxt">Delete</span></li>
                     <?php endif ?>
                     <?php if ($user_access[0]["funnel_status"] == 'Yes'): ?>
-                      <li class="  updatestatuss" id="<?php echo( $product_data[$i]["company"]) ?>-<?php echo( $product_data[$i]["customer"])?>-<?php  echo( $product_data[$i]["id"]) ?>"><span class="dropdown-menuicn"><i class="fas fa-pencil-alt"></i></span><span class="dropdown-menutxt">Status change</span></li>
+                      <li class="  updatestatuss" id="<?php echo( $product_data[$i]["company"]) ?>---<?php echo( $product_data[$i]["customer"])?>---<?php  echo( $product_data[$i]["id"]) ?>"><span class="dropdown-menuicn"><i class="fas fa-pencil-alt"></i></span><span class="dropdown-menutxt">Status change</span></li>
                     <?php endif ?>
                   </ul>
                 </div>
