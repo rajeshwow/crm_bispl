@@ -3,10 +3,9 @@
    
    if (isset($_POST['edit_id'])) {
 
-      $data = explode("-", $_POST['edit_id']);
+      $data = explode("---", $_POST['edit_id']);
 
       $serial = $data[1];
-
 
    	
    	$sql = "SELECT * from $data[0] where serialno = '$data[1]' ";
