@@ -192,8 +192,9 @@
 <script type="text/javascript">
    $(document).ready(function() {
       $("#createRenewal").submit(function(e) {
-         var username = $("#serial_response").text().trim();
-         if ((username === "Taken.") || (username === '') || (username === null) || (username === undefined)) {
+         var usernames = $("#serial_response").text().trim();
+         console.log(usernames);
+         if ((usernames === "Taken.") || (usernames === '') || (usernames === null) || (usernames === undefined)) {
             $("#serialno").focus();
             $("#serialno").attr('placeholder', 'This Serial no already Taken !');
             $("#serialno").attr('style', 'border:1px solid red !important');
@@ -201,6 +202,7 @@
             e.preventDefault();
          } else {
             $("#createRenewal").submit();
+            // e.preventDefault();
          }
       });
    });

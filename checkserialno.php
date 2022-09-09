@@ -12,10 +12,10 @@ $tablename = ($_POST['tablename']);
    
    
    if(mysqli_num_rows($result)>0){
-      $response = "<span style='color: red;'>Takens.</span>";
+      $response = "<span style='color: red;'>Taken.</span>";
    }
    else{
-      $response = "<span style='color: green;'>Availables.</span>";
+      $response = "<span style='color: green;'>Available.</span>";
    }
 
    echo $response;
