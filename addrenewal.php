@@ -175,7 +175,7 @@
                         <button type="button" name="back" onclick="location.href='./renewal.php';" class="btn btns ">Back</button>
                      </div>
                      <div class="col-xs-6">
-                        <button formaction="./crm_update_createuser.php" type="submit" name="submit" class="btn btns ">Submit</button>
+                        <button formaction="./submitrenewal.php" type="submit" name="submit" class="btn btns ">Submit</button>
                      </div>
                   </div>
 
