@@ -178,8 +178,6 @@
                         <button formaction="./submitrenewal.php" type="submit" name="submit" class="btn btns ">Submit</button>
                      </div>
                   </div>
-
-
                </form>
             </div>
          </div>
